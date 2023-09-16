@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Sofia+Sans&display=swap");
+/*(https://coolors.co/palette/f0a8ae-abb4d9-fbe2b1-110b03-ffffff);colour pallets*/
+
+body{
+    background-color: #f0a8ae; 
+    color: black;
+    font-family:"Abril Fatface", "Sofia Sans" ;
+}
+
+header{
+    background-color: #abb4d9;
+    color: black;
+}
+
+nav{
+    background-color: black;
+}
+
+.navigation-menu ul,li,a{
+    margin-bottom: 10px;
+    list-style-type: none;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+
+}
+
+main{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.card{
+    display: grid;
+    grid-template-columns:repeat(auto-fill,minmax(250px,1fr)) ;
+    gap: 20px;
+    text-align: center;
+}
+
+
+
+h3{
+    list-style-type: none;    
+}
+
+h1{
+font-size: 60px;
+font-weight: bold;
+text-align: center;
+
+}
+
+h2{
+    font-size: 20px;
+    text-align: center;
+    
+
+}
+
+img{
+    height:200px ;
+    width: 200px;
+}
+
+p{
+    text-align: center;
+}
