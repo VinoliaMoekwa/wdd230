@@ -1,68 +1,222 @@
-@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Sofia+Sans&display=swap");
-/*(https://coolors.co/palette/f0a8ae-abb4d9-fbe2b1-110b03-ffffff);colour pallets*/
+*{
+    box-sizing: border-box;
 
-body{
-    background-color: #f0a8ae; 
-    color: black;
-    font-family:"Abril Fatface", "Sofia Sans" ;
+    margin: 0;
+
+    padding: 0;
+
+
 }
 
-header{
-    background-color: #abb4d9;
+
+body{
+    background-color: #f0a8ae;
     color: black;
+    font-family:'Times New Roman', Times, serif;
+}
+
+h1 {
+
+    font-size: 1rem;
+
+    margin: 30px;
+}
+
+img {
+
+    width: 80px;
+
+    height: auto;
+
+    margin-left: 30px;
+
+   
+
+}
+
+header {
+
+    margin: 2rem auto;
+
+    background-color:#c1c5d5;
+
+    padding: 1rem;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-evenly
+}
+
+header,main,footer{
+    max-width: 767px;
+
+    /*margin: 0 auto;*/
+
+    margin: 1rem auto;
+
+    padding: 1rem;
+
 }
 
 nav{
-    background-color: black;
+    background-color:#abb4d9;
+
+    margin: 0 auto;
+
+    max-width: 767px;
+
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
 }
 
-.navigation-menu ul,li,a{
-    margin-bottom: 10px;
-    list-style-type: none;
-    text-align: center;
-    text-decoration: none;
+nav ul li a:hover {
+
     color: white;
-    background-color: black;
+
+    background-color: #14213D;
+}
+
+nav ul {
+
+    list-style-type: none;
+
+    overflow: hidden;
 
 }
+
+nav ul li a {
+
+    display: block;
+
+    color: black;
+
+    text-align: center;
+
+    padding: 0.75rem;
+
+    text-decoration: none;
+
+    font-size: 25px;
+
+    transition: 0.5s;
+
+    font-weight: bold;
+
+}
+
+.card {
+
+   
+
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
+    background-color: white;
+
+}
+
 
 main{
     max-width: 800px;
     margin: 0 auto;
+    display: grid;
+    grid-template-columns:1fr ;
+    grid-gap:1rem;
 }
 
-.card{
-    display: grid;
-    grid-template-columns:repeat(auto-fill,minmax(250px,1fr)) ;
-    gap: 20px;
+
+
+.card ul {
+
+    list-style-type: none;
+
+    margin: 10px;
+
+}
+
+.card ul li a:hover {
+
+    color: #4112c1;
+
+}
+
+
+.card ul li a {
+
+    text-decoration: none;
+
+    padding: 10px;
+
+    font-weight: bold;
+
+    line-height: 1.6;
+
+    color: #03071e;
+
+}
+
+.info {
     text-align: center;
 }
 
-
-
 h3{
-    list-style-type: none;    
+    background-color: #14213D;
+
+    color: white;
+
+    padding: 10px;
+
+    margin: 0;
+
+    text-align: center;
+
+    font-weight: bold;
 }
 
 h1{
 font-size: 60px;
-font-weight: bold;
-text-align: center;
+margin: 30px;
 
 }
 
 h2{
+    border-bottom: 1px solid black;
+
+    margin-bottom: 2rem;
+
     font-size: 20px;
+
     text-align: center;
+
     
 
 }
 
-img{
-    height:200px ;
-    width: 200px;
+footer {
+
+    margin: 2rem auto;
+
+    background-color:#c1c5d5;
+
+    padding: 1rem;
+
+    text-align: center;
+
+    line-height: 2.5;
+
+    font-family: 'Lora', serif;
+
 }
 
-p{
-    text-align: center;
+ 
+
+#footer-sect p {
+
+    font-weight: bold;
+
+    font-size: 12px;
+
+}
+
+#lastModified{
+    color: yellow;
 }
