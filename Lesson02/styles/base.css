@@ -90,15 +90,30 @@ img {
     main{
       grid-template-columns: repeat(2, 1fr); /* Two columns for medium screens */
     }
-    header{
-      min-width: 768px; 
-      align-items: center;
-    }
+
 
     .card{
       align-items: center;
     }
+    main .card:nth-child(2) {
+      display: block;
+    }
+
+    main .card:nth-child(3) {
+      grid-column: span 2;
+    }
+
+    main .card img {
+      display: block;
+    }
+
+    main .card img {
+      width: 100%;
+      height: auto;
+    }
   }
+
+  
   
   /* Large screens (e.g., desktops) */
   @media screen and (min-width: 1024px) {
