@@ -77,15 +77,30 @@ nav ul li a:hover {
     background-color: #14213D;
 }
 
+/*mobile view*/
 @media (min-width: 640px) {
 	nav ul {
-		display: flex;
+		display: flex;;
 	}
-	nav ul li {
+	nav ul li  {
 		flex: 1 1 100%;
-	}
+	} 
+    #card-container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+  
 }
 
+/*tablet view*/
+@media screen and (min-width: 768px) and (max-width: 1023px) 
+{
+ #card-container{
+    display: grid;
+    grid-template-columns:60% 40% ;
+
+ }
+}
 
 nav ul {
 
@@ -128,13 +143,26 @@ nav ul li a {
 main{
     max-width: 800px;
     margin: 0 auto;
+    
+}
+
+#card-container{
+    max-width: 800px;
+    margin: 0 auto;
     display: grid;
-    grid-template-columns:1fr ;
-    grid-gap:1rem;
+    grid-template-columns: 60% 40%;
+    grid-gap: 20px;
 }
 
 
 
+
+ #info {
+    text-align: center;
+
+    
+    
+}
 .card ul {
 
     list-style-type: none;
@@ -149,9 +177,12 @@ main{
 
 }
 
-.card{
-    display: grid;
-    grid-template-columns: flex 1fr 1fr;
+
+
+
+#info {
+    text-align: center;
+    
 }
 
 
@@ -169,9 +200,6 @@ main{
 
 }
 
-.info {
-    text-align: center;
-}
 
 h3{
     background-color: #14213D;
@@ -205,6 +233,8 @@ h2{
     
 
 }
+
+
 
 footer {
 
