@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+
+    margin: 0;
+
+    padding: 0;
+
+
+}
+
+body{
+    background-color:#a2d4d6;
+    color: #353535;
+    font-family: 'Abril FatFace', 'Sofia Sans';
+    
+}
+
+img{
+    width: 500px;
+    height: 500px;
+}
