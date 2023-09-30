@@ -78,29 +78,99 @@ nav ul li a:hover {
 }
 
 /*mobile view*/
-@media (min-width: 640px) {
-	nav ul {
-		display: flex;;
-	}
-	nav ul li  {
-		flex: 1 1 100%;
-	} 
-    #card-container{
+@media screen and (max-width: 767px) {
+    .card {
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* One column for small screens */
+      }
+
+      nav {
+    background-color:#abb4d9;
+    
     }
+    .navigation {
+        list-style: none;
+        margin: 0 auto;
+        max-width: 760px;
+     
+      
+    }
+    
+    .navigation li {
+        display: none;
+    }
+    .navigation a {
+        display: block;
+        padding: 0.75rem;
+        text-align: left;
+        text-decoration: none;
+        color: black;
+        font-weight: 700;
+        transition: 0.5s;
+        font-size: clamp(1rem, 2vmin, 1.5rem);
+    }
+    
+    .navigation a:hover, navigation a:active {
+        color: white;
+        background-color: black;
+    }
+    
+      #menu {
+        display: block;
+        font-size: 2rem;
+        font-weight:700;
+        text-decoration: none;
+        padding: .5rem .75rem;
+        background-color: #eee;
+        color: #000;
+    }
+
+      #menu::before {
+        content: "≡";
+      }
+
+      .show li {
+        display: block;
+    }
+    
+    #menu.show::before {
+        content: "⤴️";
+      position:absolute;
+      right:0;
+      
+      
+    }
+    
+    
+    
+    
+    
+    
   
-}
+    }
+    
+    
+    
+    /* Media Query for wider than mobile viewports. Breakpoint should be based upon the design and content and use em units to be relative to the user's font size versus fixed with pixels.*/
+    @media only screen and (min-width: 40em) {
 
-/*tablet view*/
-@media screen and (min-width: 768px) and (max-width: 1023px) 
-{
- #card-container{
-    display: grid;
-    grid-template-columns:60% 40% ;
+        .navigation {
+            display: flex;
+        }
+        .navigation li {
+            display: block; /* change state in small view */
+            flex: 1 1 100%;
+        }
+        .navigation a {
+            text-align: center;
+        }
+        #menu {
+            display: none;
+        }
+    }
 
- }
-}
+
+
 
 nav ul {
 
