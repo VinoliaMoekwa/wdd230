@@ -79,7 +79,7 @@ nav ul li a:hover {
 
 /*mobile view*/
 @media screen and (max-width: 767px) {
-    .card {
+    #card-container {
         display: grid;
         grid-template-columns: 1fr; /* One column for small screens */
       }
@@ -140,12 +140,6 @@ nav ul li a:hover {
       
       
     }
-    
-    
-    
-    
-    
-    
   
     }
     
@@ -166,6 +160,11 @@ nav ul li a:hover {
         }
         #menu {
             display: none;
+        }
+
+        #card-container{
+            display: grid ;
+            grid-template-columns: 1fr 1fr;
         }
     }
 
