@@ -1,0 +1,7 @@
+/* Media query for larger views with a minimum width of 768pixels */
+@media screen and (min-width: 768px) {
+    body {
+      font-size: 18px;
+    }
+
+}

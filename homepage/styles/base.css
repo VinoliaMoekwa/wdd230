@@ -80,8 +80,11 @@ nav ul li a:hover {
 /*mobile view*/
 @media screen and (max-width: 767px) {
     #card-container {
-        display: grid;
-        grid-template-columns: 1fr; /* One column for small screens */
+         
+            display: flex;
+            flex-direction: column;
+    
+           /* One column for small screens */
       }
 
       nav {
@@ -110,7 +113,7 @@ nav ul li a:hover {
         font-size: clamp(1rem, 2vmin, 1.5rem);
     }
     
-    .navigation a:hover, navigation a:active {
+    .navigation a:hover, .navigation a:active {
         color: white;
         background-color: black;
     }
