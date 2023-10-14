@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <meta charset="UTF-8">
-<meta name="author" content="Ntombizodwa Vinolia Moekwa" />
+<meta name="author" content="Ntombizodwa Vinolia Moekwa" >
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Ntombizodwa Vinolia- Moekwa-WDD 230 Frontend Development</title>
 <meta name="description"
     content="WDD 230-Web Fronted Development, Ntombizodwa Vinolia Moekwa, chamber of commerce project">
@@ -20,18 +19,8 @@
 </head>
 
 <body>
-
     <header>
-        <!-- Rounded switch -->
-        <label class="switch">
-            <input type="button">
-            <span class="slider round"></span>
-        </label>
-        <img src="images/chamber-logo.jpeg" alt="3 roses">
-        <h1>
-            City of Roses Chamber
-        </h1>
-    </header>
+    <img src="images/darkmode.png" alt="darkmode" id="icon">
     <nav>
         <a id="menu" href="#"></a>
         <ul class="navigation">
@@ -42,21 +31,22 @@
             <li><a href="#">Membership</a></li>
         </ul>
     </nav>
-    <main>
-        <div id="footprints">
-            <img src="images/Footprints.jpg" alt="hero-image">
+    <div id="hero">
+        <div id="hero-box">
+            <img id="hero-img" src="images/hero-image.jpg" alt="hero image">
         </div>
-        <button type="button"> Join US!!!</button> <!--call to action button-->
+        <div id="hero-msg">
+            <h1 class="home-title">Bloemfontein Chamber of Commerse</h1>
+            <button type="button"> Join US!!!</button> <!--call to action button-->
+        </div>
+    </div>
+    </header>
+    <main>
         <div class="grid">
-        <section>
-            <h2>Current Events</h2>
-            <ul id="events">
-                <li>1:</li>
-                <li>2:</li>
-                <li>3:</li>
-                <li>4:</li>
-                <li>5:</li>
-            </ul>
+        <section id="events">
+            <h2>Current Event</h2>
+            <p>Join us for the annual Makufe Music Festival!!!</p>
+            <p>The Festival will happen from the 20th to the 25th of October 2023. Tickets will be sold at the local Shoprite and Checkers. We will kick off the Festival with Jezz, Rnb, House and then end it with Gospel. THere will be a family friendly performance everyday from 11am to 3pm, with appearances from Tv personalities like Takalani Sesame.</p>              
         </section>
         <section class=" weather-card">
             <h3> Bloemfontein Weather</h3>
@@ -65,9 +55,13 @@
         </section>
         <section class="membership">
             <h4>Membership</h4>
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat.</p>
+            <p> 
+            As a key player in the business landscape, the Bloemfontein  Chamber of Commerce and Industry truly believes that we are where opportunities unite.
+             BCC Lobbies on critical issues affecting business, with government, on behalf of business.
+             Members are invited to share, participate and comment as “The Voice of Business” in critical issues affecting business Local and National level
+            There is a specific team selected from the council - which can include BCC members - to tackle the issues with different tiers of government
+            Connect BCC members to relevant Government Departments
+            </p>
         </section>
         </div>
     </main>
