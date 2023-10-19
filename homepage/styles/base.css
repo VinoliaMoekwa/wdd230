@@ -60,6 +60,12 @@ header,main,footer{
 
 }
 
+#card-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap:1rem;
+}
+
 nav{
     background-color:#abb4d9;
 
@@ -77,12 +83,28 @@ nav ul li a:hover {
     background-color: #14213D;
 }
 
+
+.hero {
+    position: relative;
+    overflow: hidden;
+    margin-top: 0.2rem;
+}
+
+.hero picture {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero img{
+    width: 100%;
+    height: auto;
+}
 /*mobile view*/
 @media screen and (max-width: 767px) {
     #card-container {
          
-            display: flex;
-            flex-direction: column;
+            grid-template-columns: 1fr ;
     
            /* One column for small screens */
       }

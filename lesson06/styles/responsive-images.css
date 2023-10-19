@@ -1,0 +1,14 @@
+.hero picture{
+    width: 100%;
+    
+}
+.hero img{
+    width:100%;
+    height: auto;
+}
+
+.hero {
+    position: relative;
+    overflow: hidden;
+    margin-top: 0.2rem;
+}
