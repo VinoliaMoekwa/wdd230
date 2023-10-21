@@ -3,7 +3,7 @@
 <meta charset="UTF-8">
 <meta name="author" content="Ntombizodwa Vinolia Moekwa" >
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ntombizodwa Vinolia- Moekwa-WDD 230 Frontend Development</title>
+<title>-Ntombizodwa Vinolia Moekwa-Chamber Of Commerce--WDD 230 Frontend Development</title>
 <meta name="description"
     content="WDD 230-Web Fronted Development, Ntombizodwa Vinolia Moekwa, chamber of commerce project">
 <link rel="stylesheet" href="styles/normalize.css">
@@ -31,13 +31,15 @@
             <li><a href="#">Membership</a></li>
         </ul>
     </nav>
-    <div id="hero">
-        <div id="hero-box">
-            <img id="hero-img" src="images/hero-image.jpg" alt="hero image">
-        </div>
+    <div class="hero">
+                <picture>
+                    <source srcset="images/wdd230-small.webp" media="(max-width:500px )">
+                    <source srcset="images/wdd230-medium.webp" media="(max-width:1000px )">
+                    <img src="images/wdd230-large.webp" alt="Hero Image">
+                </picture>
         <div id="hero-msg">
             <h1 class="home-title">Bloemfontein Chamber of Commerse</h1>
-            <button type="button"> Join US!!!</button> <!--call to action button-->
+            <button type="button"> Join US!!!</button>
         </div>
     </div>
     </header>
@@ -49,9 +51,27 @@
             <p>The Festival will happen from the 20th to the 25th of October 2023. Tickets will be sold at the local Shoprite and Checkers Supermarkets. We will kick off the Festival with Jazz, Rnb, House and then end it with Gospel. There will be child friendly performance everyday from 11am to 3pm, with appearances from Tv personalities like Takalani Sesame. SEE YOU THERE!!!</p>              
         </section>
         <section class=" weather-card">
-            <h3> Bloemfontein Weather</h3>
-            <p>Description: ☀️ Sunny</p>
-            <p>Temperature: 34&deg;</p>
+        <h3> Bloemfontein Weather</h3>
+        <p>Temperature: <input type="number" id="temperature">&deg;</p>
+      <p>Wind Speed: <input type="number" id="wind-speed">mph</p>
+      <p>Wind Chill: <span id="wind-chill-value">N/A</span></p>
+
+    <script>
+      const temperatureInput = document.getElementById("temperature");
+      const windSpeedInput = document.getElementById("wind-speed");
+      const windChillValue = document.getElementById("wind-chill-value");
+
+      temperatureInput.addEventListener("input", updateWindChill);
+      windSpeedInput.addEventListener("input", updateWindChill);
+
+      function updateWindChill() {
+        const temperature = parseFloat(temperatureInput.value);
+        const windSpeed = parseFloat(windSpeedInput.value);
+
+        const windChill = calculateWindChill(temperature, windSpeed);
+        windChillValue.textContent = windChill;
+      }
+    </script>
         </section>
         <section class="membership">
             <h4>Membership</h4>
@@ -76,6 +96,7 @@
     <script src="scripts/responsive-menu.js"></script>
     <script src="scripts/getdates.js"></script>
     <script src="scripts/darkmode.js"></script>
+    <script src="scripts/windchill.js"></script>
 </body>
 
 </html>

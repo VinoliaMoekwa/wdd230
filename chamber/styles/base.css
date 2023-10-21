@@ -48,7 +48,7 @@
     
     
 
-  #hero {
+  /*#hero {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     margin-top: 100px;
@@ -67,6 +67,25 @@
     margin-top: 500px;
     
   }
+  */
+
+  .hero {
+    position: relative;
+    overflow: hidden;
+    margin-top: 0.2rem;
+}
+
+.hero picture {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero img{
+    width: 100%;
+    height: auto;
+}
+
    h1 {
         font-family: 'Abril FatFace';
         font-size: 3rem;
@@ -183,7 +202,14 @@
 
      
   /*mobile view*/
-  @media screen and (max-width: 747px) {
+  @media screen and (max-width:644px) {
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 20px;
+    }
+
+
       nav ul {
           
              display: flex;
@@ -253,60 +279,30 @@
        
      }
 
-     main{
-
-         display: grid;
-         grid-template-columns: 1fr;
-
-     }
-
- }
-
-/*tablet view*/
-
-@media (min-width: 768px) and (max-width: 645px) {
-     main{ 
-         grid-template-columns: repeat(2, 1fr); /* Two columns for medium screens*/ 
-       }
      
  }
-   
- 
 
+ /* Tablet view */
 
-/*Desktop view*/
+@media (min-width: 645px) and (max-width: 767px) {
+  .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* Two columns for medium screens */
+      grid-gap: 2rem;
+  }
+}
 
-@media screen and (min-width: 745px) {
- body {
-   font-size: 18px;
- }
- .grid {
-     grid-template-columns: 1fr 1fr 1fr; 
-     /*Three columns for large screens*/
-     grid-gap: 2rem;
+/* Desktop view */
+
+@media (min-width: 768px) {
+  body {
+      font-size: 18px;
+  }
+  .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr; /* Three columns for large screens */
+      grid-gap: 2rem;
+  }
 }
 
 
-}
-
-     
-.grid {
-display: grid;
-grid-template-columns: 1fr;
-grid-gap: 20px;
-}
-
-
-
-
-
-@media screen and (min-width: 745px) {
- body {
-   font-size: 18px;
- }
- .grid{
-    grid-template-columns: 1fr 1fr 1fr;  /*Three columns for large screens*/
-    grid-gap: 1rem;
-}
-
-}
