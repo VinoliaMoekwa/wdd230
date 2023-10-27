@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="author" content="Ntombizodwa Vinolia Moekwa"/>
+    <meta name="author" content="Ntombizodwa Vinolia Moekwa">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ntombizodwa Vinolia Moekwa- WDD 230-Web Fronted Development</title>
     <meta name="description" content="WDD 230-Web Fronted Development, Ntombizodwa Vinolia Moekwa, course assignment portal">
@@ -38,7 +38,6 @@
     <div class="hero">
         <div class="hero-text">
             <p>Santo Domingo Temple of The Church of Jesus Christ of Latter Day Saints</p>
-            </picture>
             </div>
         <picture>
             <source media="(min-width: 400px)" srcset="images/hero-small.webp">
@@ -70,8 +69,10 @@
         <h3>Information</h3> 
         <ul><li><a>Bloemfontein,South Africa</a></li>
             <li><a>☀️ 32&deg;C -Sunshine </a></li>
-            <li><a> Page Visit: 10</a></li>
-        </ul></div>
+            <li><div id="page-visit-counter">
+            <a> Page Visits<span id="visit-count"> 0</span></a></div></li>
+        </ul>
+    </div>
     </section>
     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d917891.6872366291!2d28.127379399999995!3d-26.01671995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sza!4v1695834934140!5m2!1sen!2sza" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
@@ -85,5 +86,6 @@
  </footer>
  <script src="scripts/getdates.js"></script>
  <script src="scripts/hamburger-menu.js"></script>
+ <script src="scripts/pagevisits.js"></script>
 </body>
 </html>

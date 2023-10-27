@@ -62,7 +62,7 @@ header,main,footer{
 
 #card-container{
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-gap:1rem;
 }
 
@@ -112,11 +112,18 @@ nav ul li a:hover {
     color: white;
     padding:20px;
 }
+
+iframe {
+    width: 100%;
+    grid-column: 1/3;
+}
+
 /*mobile view*/
 @media screen and (max-width: 767px) {
     #card-container {
-         
-            grid-template-columns: 1fr ;
+            
+            grid-template-rows: 1fr 1fr 1fr;
+            
     
            /* One column for small screens */
       }
@@ -177,6 +184,11 @@ nav ul li a:hover {
       
       
     }
+
+    .card {
+        grid-column: 1/3;
+        width: 100%;
+    }
   
     }
     
@@ -200,7 +212,6 @@ nav ul li a:hover {
         }
 
         #card-container{
-            display: grid ;
             grid-template-columns: 1fr 1fr;
         }
     }
@@ -289,6 +300,13 @@ main{
 #info {
     text-align: center;
     
+}
+
+#page-visit-counter {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 18px;
 }
 
 
