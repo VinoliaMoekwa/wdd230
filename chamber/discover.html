@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Ntombizodwa Vinolia Moekwa">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ntombizodwa Vinolia Moekwa - Discover Page - WDD 230 - Frontend Development</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development, Ntombizodwa Vinolia Moekwa, chamber of commerce project">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="images/favicon.jpeg">
+    <meta property="og:title" content="Ntombizodwa Vinolia Moekwa - WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://pbs.twimg.com/media/EjED1zTWAAYRfZY.jpg">
+    <meta property="og:url" content="https://vinoliamoekwa.github.io/wdd230/chamber/index.html">
+</head>
+<body>
+    <header>
+        <img src="images/darkmode.png" alt="darkmode" id="icon">
+        <nav>
+            <a id="menu" href="#"></a>
+            <ul class="navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Certificate of origin</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Membership</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <picture>
+                <source srcset="images/wdd230-small.webp" media="(max-width: 500px)">
+                <source srcset="images/wdd230-medium.webp" media="(max-width: 1000px)">
+                <img src="images/wdd230-large.webp" alt="Hero Image">
+            </picture>
+            <div id="hero-msg">
+                <h1 class="home-title">Bloemfontein Chamber of Commerce</h1>
+                <button type="button">Join Us!!!</button>
+            </div>
+        </div>
+    </header>
+    <div class="discover-container">
+        <aside class="sidebar">
+            <div id="demographics">
+                <h2>Demographics</h2>
+                <ul>
+                    <li>Capital city (judicial branch) 256,185</li>
+                    <li>Density 1,100/km2 (2,800/sq mi)</li>
+                    <li>Metro[2] 747,431</li>
+                    <li>Metro density 120/km2 (310/sq mi)</li>
+                    <li>Racial makeup: Black 56.1%, Coloured 12.8%, Indian/Asian 0.8%, White 29.8%, Other 0.5%</li>
+                    <li>Languages: Afrikaans 42.5%, Sotho 33.4%, English 7.5%, Xhosa 7.1%, Tswana 9.5%</li>
+                </ul>
+            </div>
+            <div id="Upcoming-events">
+                <h3>Events</h3>
+                <ul>
+                    <li>Knights vs Limpopo at the Mangaung Oval, Thursday 02 November (10:00)</li>
+                    <li>GLS 2023 Bloemfontein at Doxa Deo Fichardt Park, Friday 03 November at (08:30)</li>
+                    <li>Charity Run Pentagon Pistils at Christian Brothers College, Saturday 04 November (05:00)</li>
+                    <li>Toileting and picky eating workshop at Blaize Academy, Saturday 4 November 2023 (07:30)</li>
+                    <li>Back to the Eighties with the Bloemfontein Philharmonica at Monte Bella Estate, Saturday 04 November (19:30)</li>
+                </ul>
+            </div>
+            <div id="attractions">
+                <h4>Attractions</h4>
+                <ul>
+                    <li>Free State National Botanical Garden</li>
+                    <li>Oliewenhuis Art Museum</li>
+                    <li>Toyota Stadium</li>
+                    <li>Navil Hill Planetarium</li>
+                    <li>Navil Hill</li>
+                    <li>Langehoven Market</li>
+                    <li>Bloemfontein Golf Club</li>
+                    <li>Elude Escape Rooms</li>
+                    <li>Famous Brew & Still</li>
+                    <li>Loch Logan Waterfront</li>
+                </ul>
+            </div>
+        </aside>
+        <main class="main-content">
+            <div class="photo">
+                <img src="images/Botanical-gardens.webp" alt="Gardens" loading="lazy">
+                <p>The beautiful Botanical Gardens</p>
+            </div>
+            <div class="photo">
+                <img src="images/Elude-Escape-Rooms.webp" alt="Escape Room" loading="lazy">
+                <p>Elude Escape Rooms</p>
+            </div>
+            <div class="photo">
+                <img src="images/Golf-Club.webp" alt="Golf Club" loading="lazy">
+                <p>Bloemfontein Golf Club</p>
+            </div>
+            <div class="photo">
+                <img src="images/naval-hill.webp" alt="Hiking" loading="lazy">
+                <p>Navil Hill</p>
+            </div>
+            <div class ="photo">
+                <img src="images/Oliewenhuis-Art-Museum.webp" alt="Art Museum" loading="lazy">
+                <p>Oliewenhuis Art Museum</p>
+            </div>
+            <div class="photo">
+                <img src="images/Toyota-Stadium.webp" alt="Stadium" loading="lazy">
+                <p>Toyota Stadium</p>
+            </div>
+        </main>
+        <div id="visits">
+            <p id="message"></p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy;<span id="currentYear"></span></p>
+        <p>📞(051) 789 3412 | ✉️cityofroses@mail.co.za</p>
+        <p>Ntombizodwa Vinolia Moekwa - WDD 230 Project</p>
+        <p>Last modified: <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/responsive-menu.js"></script>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/darkmode.js"></script>
+    <script src="scripts/windchill.js"></script>
+    <script src="scripts/localstorage.js"></script>
+</body>
+
+</html>
