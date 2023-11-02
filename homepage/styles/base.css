@@ -1,0 +1,388 @@
+*{
+    box-sizing: border-box;
+
+    margin: 0;
+
+    padding: 0;
+
+
+}
+
+
+body{
+    background-color: #f0a8ae;
+    color: black;
+    font-family:'Times New Roman', Times, serif;
+}
+
+h1 {
+
+    font-size: 1rem;
+
+    margin: 30px;
+}
+
+img {
+
+    width: 80px;
+
+    height: auto;
+
+    margin-left: 30px;
+
+   
+
+}
+
+header {
+
+    margin: 2rem auto;
+
+    background-color:#c1c5d5;
+
+    padding: 1rem;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-evenly
+}
+
+header,main,footer{
+    max-width: 767px;
+
+    /*margin: 0 auto;*/
+
+    margin: 1rem auto;
+
+    padding: 1rem;
+
+}
+
+#card-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:1rem;
+}
+
+nav{
+    background-color:#abb4d9;
+
+    margin: 0 auto;
+
+    max-width: 767px;
+
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
+}
+
+nav ul li a:hover {
+
+    color: white;
+
+    background-color: #14213D;
+}
+
+
+.hero {
+    position: relative;
+    overflow: hidden;
+    margin-top: 0.2rem;
+}
+
+.hero picture {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero img{
+    width: 100%;
+    height: auto;
+}
+
+.hero-text
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,50%);
+    text-align:center;
+    background-color: black;
+    color: white;
+    padding:20px;
+}
+
+iframe {
+    width: 100%;
+    grid-column: 1/3;
+}
+
+/*mobile view*/
+@media screen and (max-width: 767px) {
+    #card-container {
+            
+            grid-template-rows: 1fr 1fr 1fr;
+            
+    
+           /* One column for small screens */
+      }
+
+      nav {
+    background-color:#abb4d9;
+    
+    }
+    .navigation {
+        list-style: none;
+        margin: 0 auto;
+        max-width: 760px;
+     
+      
+    }
+    
+    .navigation li {
+        display: none;
+    }
+    .navigation a {
+        display: block;
+        padding: 0.75rem;
+        text-align: left;
+        text-decoration: none;
+        color: black;
+        font-weight: 700;
+        transition: 0.5s;
+        font-size: clamp(1rem, 2vmin, 1.5rem);
+    }
+    
+    .navigation a:hover, .navigation a:active {
+        color: white;
+        background-color: black;
+    }
+    
+      #menu {
+        display: block;
+        font-size: 2rem;
+        font-weight:700;
+        text-decoration: none;
+        padding: .5rem .75rem;
+        background-color: #eee;
+        color: #000;
+    }
+
+      #menu::before {
+        content: "≡";
+      }
+
+      .show li {
+        display: block;
+    }
+    
+    #menu.show::before {
+        content: "⤴️";
+      position:absolute;
+      right:0;
+      
+      
+    }
+
+    .card {
+        grid-column: 1/3;
+        width: 100%;
+    }
+  
+    }
+    
+    
+    
+    /* Media Query for wider than mobile viewports. Breakpoint should be based upon the design and content and use em units to be relative to the user's font size versus fixed with pixels.*/
+    @media only screen and (min-width: 40em) {
+
+        .navigation {
+            display: flex;
+        }
+        .navigation li {
+            display: block; /* change state in small view */
+            flex: 1 1 100%;
+        }
+        .navigation a {
+            text-align: center;
+        }
+        #menu {
+            display: none;
+        }
+
+        #card-container{
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+
+
+
+nav ul {
+
+    list-style-type: none;
+
+    overflow: hidden;
+
+}
+
+nav ul li a {
+
+    display: block;
+
+    color: black;
+
+    text-align: center;
+
+    padding: 0.75rem;
+
+    text-decoration: none;
+
+    font-size: 25px;
+
+    transition: 0.5s;
+
+    font-weight: bold;
+
+}
+
+.card {
+
+   
+
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
+    background-color: white;
+
+}
+
+
+main{
+    max-width: 800px;
+    margin: 0 auto;
+    
+}
+
+#card-container{
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-gap: 20px;
+}
+
+
+
+
+ #info {
+    text-align: center;
+
+    
+    
+}
+.card ul {
+
+    list-style-type: none;
+
+    margin: 10px;
+
+}
+
+.card  ul li a:hover {
+
+    color: #4112c1;
+
+}
+
+
+
+
+#info {
+    text-align: center;
+    
+}
+
+#page-visit-counter {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+.card ul li a {
+
+    text-decoration: none;
+
+    padding: 10px;
+
+    font-weight: bold;
+
+    line-height: 1.6;
+
+    color: #03071e;
+
+}
+
+
+h3{
+    background-color: #14213D;
+
+    color: white;
+
+    padding: 10px;
+
+    margin: 0;
+
+    text-align: center;
+
+    font-weight: bold;
+}
+
+h1{
+font-size: 60px;
+margin: 30px;
+
+}
+
+h2{
+    border-bottom: 1px solid black;
+
+    margin-bottom: 2rem;
+
+    font-size: 20px;
+
+    text-align: center;
+
+    
+
+}
+
+
+
+footer {
+
+    margin: 2rem auto;
+
+    background-color:#c1c5d5;
+
+    padding: 1rem;
+
+    text-align: center;
+
+    line-height: 2.5;
+
+    font-family: 'Lora', serif;
+
+}
+
+ 
+
+#footer-sect p {
+
+    font-weight: bold;
+
+    font-size: 12px;
+
+}
+
