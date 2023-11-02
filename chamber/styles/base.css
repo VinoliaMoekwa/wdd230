@@ -128,7 +128,7 @@
 
      
 
-     #events{
+     .directory {
         text-decoration: none;
         justify-content: center;
         text-align: center;
@@ -140,6 +140,12 @@
         border-style: groove;
         border-color:#4e86ab ;
         }
+
+        .directory li{
+          padding: 5px;
+        }
+
+      
         
 
         
@@ -158,7 +164,7 @@
 
      }
 
-     .membership{
+     #discover{
         background-color: var(--primary-color);
         padding: 5px;
         text-align: center;

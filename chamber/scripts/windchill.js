@@ -15,7 +15,20 @@ function calculateWindChill(temperatureCelsius, windSpeed) {
 
       return "N/A";
     }
+      const temperatureInput = document.getElementById("temperature");
+      const windSpeedInput = document.getElementById("wind-speed");
+      const windChillValue = document.getElementById("wind-chill-value");
 
+      temperatureInput.addEventListener("input", updateWindChill);
+      windSpeedInput.addEventListener("input", updateWindChill);
+
+      function updateWindChill() {
+        const temperature = parseFloat(temperatureInput.value);
+        const windSpeed = parseFloat(windSpeedInput.value);
+
+        const windChill = calculateWindChill(temperature, windSpeed);
+        windChillValue.textContent = windChill;
+      }
     
   }
   

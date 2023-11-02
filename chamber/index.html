@@ -24,17 +24,17 @@
     <nav>
         <a id="menu" href="#"></a>
         <ul class="navigation">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Certificate of origion</a></li>
-            <li><a href="#">Events</a></li>
-            <li><a href="#">Membership</a></li>
+            <li><a href="https://vinoliamoekwa.github.io/wdd230/chamber/index.html">Home</a></li>
+            <li><a href="https://vinoliamoekwa.github.io/wdd230/chamber/discover.html"></a>Discover</li>
+            <li><a href="#"></a>Directory</li>
+            <li><a href="#"></a>Join</li>
+            
         </ul>
     </nav>
     <div class="hero">
                 <picture>
-                    <source srcset="images/wdd230-small.webp" media="(max-width:500px )">
-                    <source srcset="images/wdd230-medium.webp" media="(max-width:1000px )">
+                    <source srcset="images/wdd230-small.webp" media="(max-width:500px)">
+                    <source srcset="images/wdd230-medium.webp" media="(max-width:1000px)">
                     <img src="images/wdd230-large.webp" alt="Hero Image">
                 </picture>
         <div id="hero-msg">
@@ -45,43 +45,45 @@
     </header>
     <main>
         <div class="grid">
-        <section id="events">
-            <h2>Current Event</h2>
-            <p>Join us for the annual Makufe Music Festival!!!</p>
-            <p>The Festival will happen from the 20th to the 25th of October 2023. Tickets will be sold at the local Shoprite and Checkers Supermarkets. We will kick off the Festival with Jazz, Rnb, House and then end it with Gospel. There will be child friendly performance everyday from 11am to 3pm, with appearances from Tv personalities like Takalani Sesame. SEE YOU THERE!!!</p>              
+        <section id="discover">
+            <h2>Discover</h2>
+            <p>Discover the exciting things you can do in the City of roses every weekend</p>
+            <p>If crowded events are not for you we have great bonding sessions at botanical gardens and tourist atrractions like National Museums. If you feel like singing and shoudting we have one of the biggest stadiums in the country, this is surely a sight to see!</p>              
         </section>
         <section class=" weather-card">
         <h3> Bloemfontein Weather</h3>
         <p>Temperature: <input type="number" id="temperature">&deg;</p>
       <p>Wind Speed: <input type="number" id="wind-speed">mph</p>
       <p>Wind Chill: <span id="wind-chill-value">N/A</span></p>
-
-    <script>
-      const temperatureInput = document.getElementById("temperature");
-      const windSpeedInput = document.getElementById("wind-speed");
-      const windChillValue = document.getElementById("wind-chill-value");
-
-      temperatureInput.addEventListener("input", updateWindChill);
-      windSpeedInput.addEventListener("input", updateWindChill);
-
-      function updateWindChill() {
-        const temperature = parseFloat(temperatureInput.value);
-        const windSpeed = parseFloat(windSpeedInput.value);
-
-        const windChill = calculateWindChill(temperature, windSpeed);
-        windChillValue.textContent = windChill;
-      }
-    </script>
         </section>
-        <section class="membership">
-            <h4>Membership</h4>
-            <p> 
-            As a key player in the business landscape, the Bloemfontein  Chamber of Commerce and Industry truly believes that we are where opportunities unite.
-             BCC Lobbies on critical issues affecting business, with government, on behalf of business.
-             Members are invited to share, participate and comment as “The Voice of Business” in critical issues affecting business Local and National level
-            There is a specific team selected from the council - which can include BCC members - to tackle the issues with different tiers of government
-            Connect BCC members to relevant Government Departments
-            </p>
+        <section class="directory">
+            <h4>Directory</h4>
+            <ul>
+                <li>
+                    <p>Category: Catering</p>
+                    <p>Contact: JMJ Catering Bloemfontein</p>
+                    <p>Phone: (+27) 73 255 6376 </p>
+                    <p>Email: jmjcateringbfn@gmail.com</p>
+                </li>
+                <li>
+                    <p>Category: Retailer</p>
+                    <p>Contact:Wholesale and Retail Seta </p>
+                    <p>Phone:(051) 444 0766 </p>
+                    <p>Email:w$rseta@tip-offs.com </p>
+                </li>
+                <li>
+                    <p>Category: Health Practioners</p>
+                    <p>Contact:Dr Louis Hugo Medical Practioner </p>
+                    <p>Phone:(051) 522 2988 </p>
+                    <p>Email:drluishugo@gmail.com </p>
+                </li>
+                <li>
+                    <p>Category: Distributors</p>
+                    <p>Contact: Volume Food Distributors</p>
+                    <p>Phone:051 435 7752 </p>
+                    <p>Email:volumedristributors@gmail.com </p>
+                </li>
+                </ul>
         </section>
         </div>
     </main>
