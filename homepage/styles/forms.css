@@ -1,0 +1,39 @@
+/*form*/
+
+input[type="range"]{
+    width:27%;
+}
+
+output[for="r"]
+{
+    display: block;
+    text-align: center;
+    margin:20px;
+}
+
+/*main {
+    align-items: center;
+}*/
+
+label {
+    display: block;
+}
+
+/*#r {
+	width: 180px;
+	margin-bottom:0;
+}*/
+
+#rangevalue {
+	font-size: 2rem;
+	color: navy;
+}
+
+#rangevalues {
+	display: flex;
+	width: 225px;
+}
+
+#rangevalues option {
+	flex: 1 1 auto;
+}

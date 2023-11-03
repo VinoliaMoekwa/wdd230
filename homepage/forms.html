@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Ntombizodwa Vinolia Moekwa">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ntombizodwa Vinolia Moekwa- WDD 230-Web Fronted Development</title>
+    <meta name="description"
+        content="WDD 230-Web Fronted Development, Ntombizodwa Vinolia Moekwa, course assignment portal">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/forms.css">
+    <link rel="icon" href="images/staricon.png">
+    <meta property="og:title" content="Ntombizodwa Vinolia Moekwa- WDD 230-Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og: image" content="https://rove.me/to/south-africa/jacarandas-in-pretoria">
+    <meta property="og: url" content="https://vinoliamoekwa.github.io/wdd230/homepage/">
+
+</head>
+
+<body>
+    <header>
+        <img src="images/Ntombi.jpeg" alt="Ntombi">
+        <h1>Ntombi Moekwa</h1>
+
+    </header>
+    <a id="menu" href="#"></a>
+    <nav>
+        <ul class="navigation">
+            <li><a href="">Home</a></li>
+            <li><a href="chamber/siteplan.html">Site Plan</a></li>
+            <li><a href="chamber/index.html">chamber</a></li>
+            <li><a href="byui.edu">BYU-Idaho</a></li>
+            <li><a href="https://www.churchofjesuschrist.org/study/scriptures">Scriptures</a></li>
+
+
+        </ul>
+    </nav>
+
+    <main>
+        <form action="record.html" method="get">
+            <fieldset>
+                <legend>Personal Details</legend>
+                <label for="fname">Username:</label>
+                <input type="text" id="fname" name="fname"><br><br>
+                <label for="pwd">Password:</label>
+                <input type="password" id="pwd" name="pwd" pattern=".{8,}"
+                    placeholder="Eight or more characters"><br><br>
+                <label for="pwd2">Re-enter Password:</label>
+                <input type="password2" id="pwd2" name="pwd" pattern=".{8,}"
+                    placeholder="Eight or more characters"><br><br>
+                <label for="Email">Email:</label>
+                <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-] +@byui\.edu$"
+                    placeholder="Please use your 'byui.edu' mail">
+            </fieldset>
+
+            
+
+                <label for="r">Rate this page:</label>
+                <div id="rangevalue">1</div>
+                <input type="range" id="r" name="r" min="1" max="10" value="1" step="1" list="rangevalues">
+                <datalist id="rangevalues">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+            
+                </datalist>
+
+                
+            
+
+            <input type="submit" value="Complete Form">
+        </form>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentYear"></span></p>
+        <p>Ntombi Moekwa</p>
+        <p>South Africa</p>
+        <p>Last modified: <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/hamburger-menu.js"></script>
+    <script src="scripts/pagevisits.js"></script>
+    <script src="scripts/rangevalue.js"></script>
+</body>
+
+</html>
