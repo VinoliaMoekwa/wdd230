@@ -11,18 +11,12 @@ output[for="r"]
     margin:20px;
 }
 
-/*main {
-    align-items: center;
-}*/
 
 label {
     display: block;
 }
 
-/*#r {
-	width: 180px;
-	margin-bottom:0;
-}*/
+
 
 #rangevalue {
 	font-size: 2rem;

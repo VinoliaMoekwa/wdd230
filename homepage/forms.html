@@ -43,17 +43,17 @@
         <form action="record.html" method="get">
             <fieldset>
                 <legend>Personal Details</legend>
-                <label for="fname">Username:</label>
-                <input type="text" id="fname" name="fname"><br><br>
-                <label for="pwd">Password:</label>
+                <label for="fname">Username*:</label>
+                <input type="text" id="fname" name="fname" required><br><br>
+                <label for="pwd">Password*:</label>
                 <input type="password" id="pwd" name="pwd" pattern=".{8,}"
-                    placeholder="Eight or more characters"><br><br>
-                <label for="pwd2">Re-enter Password:</label>
+                    placeholder="Eight or more characters" required><br><br>
+                <label for="pwd2">Re-enter Password*:</label>
                 <input type="password2" id="pwd2" name="pwd" pattern=".{8,}"
-                    placeholder="Eight or more characters"><br><br>
-                <label for="Email">Email:</label>
+                    placeholder="Eight or more characters" required><br><br>
+                <label for="Email">Email*:</label>
                 <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-] +@byui\.edu$"
-                    placeholder="Please use your 'byui.edu' mail">
+                    placeholder="Please use your 'byui.edu' mail" required>
             </fieldset>
 
             
