@@ -234,6 +234,64 @@
   } 
 
 
+  /*----Join Rules---*/
+  /* Create a container for the form and benefits */
+  .form-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* Style for the form section */
+
+
+  .form-section {
+    display:block;
+    max-width: 500px;
+    width:100%;
+    margin: auto;
+  }
+
+
+  #personal-information label {
+    display: block;
+    margin-bottom: 10px;
+  
+
+  }
+
+  #personal-information input{
+    width:100%;
+    margin-bottom: 10px;
+    border:1px solid black
+  }
+
+  legend{
+    font-size: larger;
+    color: #000;
+    background-color: white;
+  }
+  /* Style for the benefits section */
+  .benefits-section {
+    flex: 1;
+    margin-left: 20px; /* Add margin for spacing */
+  }
+
+  /* Style for the benefits list */
+  .benefits-list {
+    list-style: none;
+    padding-left: 20px;
+  }
+
+
+  /*----thankyou Rule-----*/
+  .thank-you{
+    font-size: 2rem;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 5rem;
+
+  }
 
 
 
@@ -330,6 +388,12 @@
 .main-content:hover img{
   transform: none;
 }
+
+/*----forms---*/
+     .form-container{
+      display:grid;
+      grid-template-columns: 1fr;
+     }
      
  }
 

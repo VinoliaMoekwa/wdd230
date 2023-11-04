@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="author" content="Ntombizodwa Vinolia Moekwa">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>-Ntombizodwa Vinolia Moekwa-Chamber Of Commerce- wdd 230 -Frontend Development</title>
+<meta name="description"
+    content="WDD 230-Web Fronted Development, Ntombizodwa Vinolia Moekwa, chamber of commerce project">
+<link rel="stylesheet" href="styles/normalize.css">
+<link rel="stylesheet" href="styles/base.css">
+<link rel="stylesheet" href="styles/medium.css">
+<link rel="stylesheet" href="styles/larger.css">
+<link rel="icon" href="images/favicon.jpeg">
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Sofia+Sans&display=swap" rel="stylesheet">
+<meta property="og:title" content="Ntombizodwa Vinolia Moekwa- WDD 230-Web Frontend Development">
+<meta property="og:type" content="website">
+<meta property="og: image" content="https://pbs.twimg.com/media/EjED1zTWAAYRfZY.jpg">
+<meta property="og: url" content="https://vinoliamoekwa.github.io/wdd230/chamber/index.html">
+
+</head>
+
+<body>
+    <header>
+        <img src="images/darkmode.png" alt="darkmode" id="icon">
+        <nav>
+            <a id="menu" href="#"></a>
+            <ul class="navigation">
+                <li><a href="https://vinoliamoekwa.github.io/wdd230/chamber/index.html">Home</a></li>
+                <li><a href="https://vinoliamoekwa.github.io/wdd230/chamber/discover.html">Discover</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Directory</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <picture>
+                <source srcset="images/small.webp" media="(max-width:500px)">
+                <source srcset="images/medium.webp" media="(max-width:1000px)">
+                <img src="images/large.webp" alt="Hero Image">
+            </picture>
+            <div id="hero-msg">
+                <h1 class="home-title">Bloemfontein Chamber of Commerse</h1>
+                <button type="button"> Join US!!!</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="form-container">
+            <div class="form-section">
+                <h2>Membership Form</h2>
+                <form method="get" action="thankyou.html">
+                    <fieldset>
+                        <legend>Personal Information</legend>
+                        <div id="personal-information">
+                            <label for="fname">First Name*<input type="text" name="fname" id="fname" required></label>
+                            <label for="lname">Last Name*<input type="text" name="lname" id="lname" required></label>
+                            <label for="position">Position<input type="text" name="position" id="position" pattern="^[a-zA-Z\s-]{7,}$"></label>
+                            <label for="email">Email*<input type="email" name="email" id="email" placeholder="johndoe@gmail.com" required></label>
+                            <label for="telephone">Phone Number*<input type="tel" name="telephone" id="telephone" required></label>
+                            <label for="businessName">Business Name*<input type="text" name="businessName" id="businessName" required></label>
+                        </div>
+                    </fieldset>
+                
+                    <fieldset>
+                        <legend>Membership Level</legend>
+                        <label for="membershipLevel">Membership Level:</label>
+                        <select id="membershipLevel" name="membershipLevel">
+                            <option value="">Please Select</option>
+                            <option value="NP">NP Membership (No fee)</option>
+                            <option value="Bronze">Bronze Membership</option>
+                            <option value="Silver">Silver Membership</option>
+                            <option value="Gold">Gold Membership</option>
+                        </select>
+                    </fieldset>
+                
+                    <fieldset>
+                        <legend>Business Description</legend>
+                        <label for="businessDescription">Business Description:</label>
+                        <textarea id="businessDescription" name="businessDescription" rows="4" cols="50"></textarea>
+                    </fieldset>
+                
+                    <label><input type="hidden" id="timestamp" name="timestamp" value="YYYY-MM-DD HH:MM:SS"></label>
+                    <label><input type="submit" value="JOIN US" id="submitB"></label>
+                </form>
+                
+                
+            </div>
+            <div class="benefits-section">
+                <h2>Membership Benefits</h2>
+                <ul class="benefits-list">
+                    <li><strong>NP Membership (No fee):</strong> Attending all meetings for basic benefits</li>
+                    <li><strong>Bronze Membership:</strong> Business Directory of directors and chat groups for business
+                        ideas</li>
+                    <li><strong>Silver Membership:</strong> Mentoring by Directors at special events</li>
+                    <li><strong>Gold Membership:</strong> VIP Access to all events and packages</li>
+                </ul>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentYear"></span></p>
+        <p> 📞(051)789 3412| ✉️cityofroses@mail.co.za</p>
+        <p>Ntombizodwa Vinolia Moekwa-WDD 230 Project</p>
+        <p>Last modified: <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/responsive-menu.js"></script>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/darkmode.js"></script>
+    <script src="scripts/windchill.js"></script>
+</body>
+
+</html>
