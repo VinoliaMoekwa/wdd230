@@ -1,4 +1,10 @@
 /*form*/
+:root {
+    --main-color: navy;
+    --main-font-size: 2rem;
+  }
+  
+
 
 input[type="range"]{
     width:27%;
@@ -19,8 +25,8 @@ label {
 
 
 #rangevalue {
-	font-size: 2rem;
-	color: navy;
+	font-size:var(--main-font-size);
+	color: var(--main-color);
 }
 
 #rangevalues {
