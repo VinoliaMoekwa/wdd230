@@ -1,0 +1,27 @@
+{
+    "familyName": "Moekwa",
+    "moveInDate": "2022",
+    "numberOfRecords": 3,
+    "visitedByBishopric": "Yes",
+    "members": [
+        {
+            "name": "Mighty",
+            "gender": "Male",
+            "birthdate": "1987-08-17"
+        },
+        {
+            "name": "Ntombizodwa",
+            "gender": "Female",
+            "birthdate": "1993-07-05"
+        },
+        {
+            "name": "Oatlile",
+            "gender": "Male",
+            "birthdate": "2021-08-05"
+        }
+    ]
+}
+
+    
+
+
