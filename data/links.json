@@ -1,0 +1,142 @@
+{
+    "lessons": [
+      {
+        "lesson": "01",
+        "links": [
+          {
+            "url": "lesson01/holygrail.html",
+            "title": "Lesson 01 Holygrail"
+          }
+        ]
+      },
+      {
+        "lesson": "02",
+        "links": [
+          {
+            "url": "lesson02/design-principles.html",
+            "title": "Lesson 02 Design Principles"
+          },
+          {
+            "url": "lesson02/media-query.html",
+            "title": "Media Query"
+          }
+        ]
+      },
+      {
+        "lesson": "03",
+        "links": [
+          {
+            "url": "https://www.w3schools.com/css/exercise.asp?filename=exercise_combinators4",
+            "title": "Lesson 03 Combinators"
+          },
+          {
+            "url": "https://codepen.io/choromba/pen/BavVWMN",
+            "title": "Hamburger Menu"
+          }
+        ]
+      },
+      {
+        "lesson": "05",
+        "links": [
+          {
+            "url": "lesson05/bom.html",
+            "title": "Lesson 05 DOM Manipulation"
+          }
+        ]
+      },
+      {
+        "lesson": "06",
+        "links": [
+          {
+            "url": "lesson06/images/landscape.webp",
+            "title": "Lesson 06 Webp"
+          },
+          {
+            "url": "lesson06/responsive-images.html",
+            "title": "Responsive Images"
+          }
+        ]
+      },
+      {
+        "lesson": "07",
+        "links": [
+          {
+            "url": "lesson07/bom.html",
+            "title": "Lesson 07 Web Storage API"
+          },
+          {
+            "url": "lesson03/lazyload.html",
+            "title": "Lazy Loading"
+          }
+        ]
+      },
+      {
+        "lesson": "08",
+        "links": [
+          {
+            "url": "lesson08/tablebuild.html",
+            "title": "Lesson 08 Table Build"
+          },
+          {
+            "url": "form.html",
+            "title": "Forms"
+          }
+        ]
+      },
+      {
+        "lesson": "09",
+        "links": [
+          {
+            "url": "",
+            "title": "Lesson 09"
+          }
+        ]
+      },
+      {
+        "lesson": "10",
+        "links": [
+          {
+            "url": "",
+            "title": "Lesson 10"
+          }
+        ]
+      },
+      {
+        "lesson": "11",
+        "links": [
+          {
+            "url": "",
+            "title": "Lesson 11"
+          }
+        ]
+      },
+      {
+        "lesson": "12",
+        "links": [
+          {
+            "url": "",
+            "title": "Lesson 12"
+          }
+        ]
+      },
+      {
+        "lesson": "13",
+        "links": [
+          {
+            "url": "",
+            "title": "Lesson 13"
+          }
+        ]
+      },
+      {
+        "lesson": "14",
+        "links": [
+          {
+            "url": "",
+            "title": "Lesson 14"
+          }
+        ]
+      }
+    ]
+  }
+  
