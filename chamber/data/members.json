@@ -1,0 +1,68 @@
+{
+    "members": [
+      {
+        "image":"clicks.webp",  
+        "name": "Clicks",
+        "address": "Shop C15 Middestad Center,Cnr Charles & Oos Burger Street  Bloemfontein",
+        "phone": "051 448 2751",
+        "website":"https://clicks.co.za",
+        "membership_level": "Gold",
+        "other_info": "Pharmacy and Cosmetics"
+      },
+      {
+        "image": "express-stores.webp",
+        "name": "Express Store",
+        "address": "88 Charlotte Maxeke St, Bloemfontein Central, Bloemfontein",
+        "phone": "051 448 9604",
+        "website":"https://expessstores.co.za",
+        "membership_level": "Silver",
+        "other_info": "Clothing Store"
+      },
+      {
+        "name": "Incredible Connection",
+        "address": "Shop U47, Mimosa Mall, Kellner St, Brandwag, Bloemfontein",
+        "phone": "051 410 7820",
+        "website":"https://incredible.co.za",
+        "image": "incredibleconnection.webp",
+        "membership_level": "Gold",
+        "other_info": "Electronics Store"
+      },
+      {
+        "name": "TotalEnergies Tollas",
+        "address": "Cnr Curie Ave, Pasteur Dr, &, Bloemfontein",
+        "phone": "051 447 8046",
+        "website":"https://totalenergies.co.za",
+        "image": "totalenergies.webp",
+        "membership_level": "Gold",
+        "other_info": "Petrol Station"
+      },
+      {
+        "name": "Pick and Pay Bloemgate",
+        "address": "98 Zastron St, Brandwag, Bloemfontein",
+        "phone": "051 448 67990",
+        "website":"https://pnp.co.za",
+        "image": "pickandpay.webp",
+        "membership_level": "Silver",
+        "other_info": "Grocery Store"
+      },
+      {
+        "name": "Windmill Casino",
+        "address": "Jan Pierewiet Rd, Musgrave, Bloemfontein",
+        "phone": "051 410 2000",
+        "website":"https://suninternational.com",
+        "image": "windmill-casino.webp",
+        "membership_level": "Gold",
+        "other_info": "Resort and Casino"
+      },
+      {
+        "name": "Food Lovers Market",
+        "address": "Cnr Nelson Mandela Drive & Miller Road, Langenhoven Park, Bloemfontein",
+        "phone": "051 451 2550",
+        "website":"https://foodloversmarket.co.za",
+        "image": "foodloversmarket.webp",
+        "membership_level": "Gold",
+        "other_info": "Fruit and Vegetables Store"
+      }
+    ]
+  }
+  
