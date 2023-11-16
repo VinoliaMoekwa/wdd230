@@ -1,0 +1,30 @@
+const currentTemp = document.querySelector('#currentTemp');
+const weatherIcon = document.querySelector('#weatherIcon');
+const captionDesc = document.querySelector('#captionDesc');
+
+const url ='https://api.openweathermap.org/data/2.5/weather?lat=-29.07076&lon=26.12374&units=imperial&appid=ea0ef6d4bca4ed72adb77eca9be71837';
+
+async function apiFetch() {
+  try {
+    const response = await fetch(url);
+    if (response.ok) {
+      const data = await response.json();
+      displayResults(data); // Call displayResults function with the fetched data
+    } else {
+      throw Error(await response.text());
+    }
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+apiFetch();
+
+function displayResults(data) {
+  currentTemp.innerHTML = `${data.main.temp}&deg;F`;
+  const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+  let desc = data.weather[0].description;
+  weatherIcon.setAttribute('src', iconsrc);
+  weatherIcon.setAttribute('alt', desc);
+  captionDesc.textContent = `${desc}`;
+}

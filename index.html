@@ -72,15 +72,14 @@
             <section class="card">
                 <div id="info">
                     <h3>Information</h3>
-                    <ul>
-                        <li><a>Bloemfontein,South Africa</a></li>
-                        <li><a>☀️ 32&deg;C -Sunshine </a></li>
-                        <li>
+                        <p>The current temperature in Bloemfontein, South Africa <span id="currentTemp"></span></p>
+                        <figure>
+                            <img id="weatherIcon" src="" alt="">
+                            <figcaption id="captionDesc"></figcaption>
+                          </figure>
                             <div id="page-visit-counter">
-                                <a> Page Visits<span id="visit-count"> 0</span></a>
+                                <a> Page Visits<span id="visit-count">  0</span></a>
                             </div>
-                        </li>
-                    </ul>
                 </div>
             </section>
             <iframe
@@ -100,6 +99,7 @@
     <script src="scripts/hamburger-menu.js"></script>
     <script src="scripts/pagevisits.js"></script>
     <script src="scripts/links.js"></script>
+    <script src="scripts/weather.js"></script>
 
 </body>
 
