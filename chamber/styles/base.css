@@ -357,6 +357,32 @@ main .members-container {
   color: #ddd;
 }
 
+/*-----banner-----*/
+#chamber-banner {
+  background-color: #f2f2f2;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: none;
+}
+
+#chamber-banner p {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+
+#close-banner {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 
 @media (min-width: 768px) {
   .member-card, .member-list-item {

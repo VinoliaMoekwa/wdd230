@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="author" content="Ntombizodwa Vinolia Moekwa">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ntombizodwa Vinolia Moekwa-Chamber Of Commerce- WDD 230 -Frontend Development</title>
-<meta name="description"
-    content="WDD 230-Web Fronted Development, Ntombizodwa Vinolia Moekwa, chamber of commerce project">
-<link rel="stylesheet" href="styles/normalize.css">
-<link rel="stylesheet" href="styles/base.css">
-<link rel="stylesheet" href="styles/medium.css">
-<link rel="stylesheet" href="styles/larger.css">
-<link rel="icon" href="images/favicon.jpeg">
-<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Sofia+Sans&display=swap" rel="stylesheet">
-<meta property="og:title" content="Ntombizodwa Vinolia Moekwa- WDD 230-Web Frontend Development">
-<meta property="og:type" content="website">
-<meta property="og: image" content="https://pbs.twimg.com/media/EjED1zTWAAYRfZY.jpg">
-<meta property="og: url" content="https://vinoliamoekwa.github.io/wdd230/chamber/index.html">
+    <meta charset="UTF-8">
+    <meta name="author" content="Ntombizodwa Vinolia Moekwa">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ntombizodwa Vinolia Moekwa-Chamber Of Commerce- WDD 230 -Frontend Development</title>
+    <meta name="description"
+        content="WDD 230-Web Fronted Development, Ntombizodwa Vinolia Moekwa, chamber of commerce project">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="images/favicon.jpeg">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Sofia+Sans&display=swap" rel="stylesheet">
+    <meta property="og:title" content="Ntombizodwa Vinolia Moekwa- WDD 230-Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og: image" content="https://pbs.twimg.com/media/EjED1zTWAAYRfZY.jpg">
+    <meta property="og: url" content="https://vinoliamoekwa.github.io/wdd230/chamber/index.html">
 
 </head>
 
@@ -55,10 +56,18 @@
                     stadiums in the country, this is surely a sight to see!</p>
             </section>
             <section class=" weather-card">
-                <h3> Bloemfontein Weather</h3>
-                <p>Current Temperature: <span id="temperature">45°F</span></p>
-                <p>Current Wind Speed: <span id="windSpeed">8 mph</span></p>
-                <p>Wind Chill Factor: <span id="windChillValue">Calculating...</span></p>
+                <h3>Weather forecast</h3>
+                <p>The current temperature in Bloemfontein, South Africa <span id="currentTemp"></span></p>
+                <figure>
+                    <img id="weatherIcon" src="" alt="">
+                    <figcaption id="captionDesc"></figcaption>
+                    <div id="forecast-container"></div>
+                </figure>
+                <div id="chamber-banner">
+                    <p>Join us for the Chamber of Commerce Meet & Greet on Wednesday at 7:00 PM!</p>
+                    <button id="close-banner">Close</button>
+                  </div>
+                  
             </section>
             <section class="directory">
                 <h4>Directory</h4>
@@ -96,17 +105,19 @@
     <footer>
         <div class="compani-info">
             <div class="footer-column">
-              <img src="images/bloemfontein-logo.webp" alt="Bloemfontein Chamber of Commerce logo">
+                <img src="images/bloemfontein-logo.webp" alt="Bloemfontein Chamber of Commerce logo">
             </div>
-        <p>&copy;<span id="currentYear"></span></p>
-        <p> 📞(051)789 3412| ✉️cityofroses@mail.co.za</p>
-        <p>Ntombizodwa Vinolia Moekwa-WDD 230 Project</p>
-        <p>Last modified: <span id="lastModified"></span></p>
+            <p>&copy;<span id="currentYear"></span></p>
+            <p> 📞(051)789 3412| ✉️cityofroses@mail.co.za</p>
+            <p>Ntombizodwa Vinolia Moekwa-WDD 230 Project</p>
+            <p>Last modified: <span id="lastModified"></span></p>
     </footer>
     <script src="scripts/responsive-menu.js"></script>
     <script src="scripts/getdates.js"></script>
     <script src="scripts/darkmode.js"></script>
     <script src="scripts/windchill.js"></script>
+    <script src="scripts/currentweather.js"></script>
+    <script src="scripts/banner.js"></script>
 </body>
 
 </html>
