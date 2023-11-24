@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Ntombizodwa Vinolia Moekwa">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ntombizodwa Vinolia Moekwa - WDD 230 - Frontend Development</title>
-    <meta name="description" content="WDD 230 - Web Frontend Development, Ntombizodwa Vinolia Moekwa, chamber of commerce project">
+    <meta name="description"
+        content="WDD 230 - Web Frontend Development, Ntombizodwa Vinolia Moekwa, chamber of commerce project">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
@@ -17,16 +19,18 @@
     <meta property="og:image" content="https://pbs.twimg.com/media/EjED1zTWAAYRfZY.jpg">
     <meta property="og:url" content="https://vinoliamoekwa.github.io/wdd230/chamber/index.html">
 </head>
+
 <body>
     <header>
         <img src="images/darkmode.png" alt="darkmode" id="icon">
         <nav>
             <a id="menu" href="#"></a>
-            <ul class="navigation"></ul>
-                <li><a href="https://vinoliamoekwa.github.io/wdd230/chamber/index.html">Home</a></li>
-                <li><a href="https://vinoliamoekwa.github.io/wdd230/chamber/discover.html">Discover</a></li>
-                <li><a href="#">Join</a></li>
-                <li><a href="#">Directory</a></li>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="directory.html">Directory</a></li>
+
             </ul>
         </nav>
         <div class="hero">
@@ -37,88 +41,263 @@
             </picture>
             <div id="hero-msg">
                 <h1 class="home-title">Bloemfontein Chamber of Commerce</h1>
-                <button type="button">Join Us!!!</button>
+                <div class="button">
+                    <a href="join.html" target="_blank" title="join" class="btn">Join The Chamber</a>
+                </div>
             </div>
         </div>
     </header>
-    <div class="discover-container">
-        <aside class="sidebar">
-            <div id="demographics">
-                <h2>Demographics</h2>
-                <ul>
-                    <li>Capital city (judicial branch) 256,185</li>
-                    <li>Density 1,100/km2 (2,800/sq mi)</li>
-                    <li>Metro[2] 747,431</li>
-                    <li>Metro density 120/km2 (310/sq mi)</li>
-                    <li>Racial makeup: Black 56.1%, Coloured 12.8%, Indian/Asian 0.8%, White 29.8%, Other 0.5%</li>
-                    <li>Languages: Afrikaans 42.5%, Sotho 33.4%, English 7.5%, Xhosa 7.1%, Tswana 9.5%</li>
-                </ul>
+    <main>
+        <h2 class="name">Discover</h2>
+        <div class="discover-container">
+
+            <aside class="sidebar">
+
+                <div class="sidebar-content">
+                    <p id="sidebar-message"></p>
+                </div>
+                <div id="demographics">
+                    <h2>Demographics</h2>
+                    <ul>
+                        <li>Capital city (judicial branch) 256,185</li>
+                        <li>Density 1,100/km2 (2,800/sq mi)</li>
+                        <li>Metro[2] 747,431</li>
+                        <li>Metro density 120/km2 (310/sq mi)</li>
+                        <li>Racial makeup: Black 56.1%, Coloured 12.8%, Indian/Asian 0.8%, White 29.8%, Other 0.5%</li>
+                        <li>Languages: Afrikaans 42.5%, Sotho 33.4%, English 7.5%, Xhosa 7.1%, Tswana 9.5%</li>
+                    </ul>
+                </div>
+                <div id="upcoming-events">
+                    <h2>Events</h2>
+                    <ul>
+                        <li>Knights vs Limpopo at the Mangaung Oval, Thursday 02 November (10:00)</li>
+                        <li>GLS 2023 Bloemfontein at Doxa Deo Fichardt Park, Friday 03 November at (08:30)</li>
+                        <li>Charity Run Pentagon Pistils at Christian Brothers College, Saturday 04 November (05:00)
+                        </li>
+                        <li>Toileting and picky eating workshop at Blaize Academy, Saturday 4 November 2023 (07:30)</li>
+                        <li>Back to the Eighties with the Bloemfontein Philharmonica at Monte Bella Estate, Saturday 04
+                            November (19:30)</li>
+                    </ul>
+                </div>
+                <div id="attractions">
+                    <h2>Attractions</h2>
+                    <ul>
+                        <li>Free State National Botanical Garden</li>
+                        <li>Oliewenhuis Art Museum</li>
+                        <li>Toyota Stadium</li>
+                        <li>Navil Hill Planetarium</li>
+                        <li>Navil Hill</li>
+                        <li>Langehoven Market</li>
+                        <li>Bloemfontein Golf Club</li>
+                        <li>Elude Escape Rooms</li>
+                        <li>Famous Brew & Still</li>
+                        <li>Loch Logan Waterfront</li>
+                    </ul>
+                </div>
+                <div id="statistics">
+                    <h2>Statics by Location</h2>
+                    <table>
+                        <caption>Table1: Statistics per Location</caption>
+                        <thead>
+                            <tr>
+                                <th colspan="3" scope="colgroup">Bloemfontein Suburbs</th>
+                            </tr>
+                            <tr>
+                                <th scope="col">Name</th>
+                                <th scope="col">Population</th>
+                                <th scope="col">Area (km²) </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Arboretum</td>
+                                <td>255</td>
+                                <td>0.86</td>
+                            </tr>
+                            <tr>
+                                <td>Asbury</td>
+                                <td>11,478</td>
+                                <td>2.05</td>
+                            </tr>
+                            <tr>
+                                <td>Bayvalley</td>
+                                <td>763</td>
+                                <td>0.44</td>
+                            </tr>
+                            <tr>
+                                <td>Baywater</td>
+                                <td>4,491</td>
+                                <td>3.26</td>
+                            </tr>
+                            <tr>
+                                <td>Baywater Rural</td>
+                                <td>763</td>
+                                <td>3.27</td>
+                            </tr>
+                            <tr>
+                                <td>Bloemfontein Airport</td>
+                                <td>384</td>
+                                <td>6.88</td>
+                            </tr>
+                            <tr>
+                                <td>Bloemfontein Central</td>
+                                <td>7,578</td>
+                                <td>2.58</td>
+                            </tr>
+                            <tr>
+                                <td>Bloemfontein SP</td>
+                                <td>481</td>
+                                <td>15.07</td>
+                            </tr>
+                            <tr>
+                                <td>Bloemside Phase 1</td>
+                                <td>3,644</td>
+                                <td>0.70</td>
+                            </tr>
+                            <tr>
+                                <td>Bloemside Phase 2</td>
+                                <td>6,594</td>
+                                <td>1.07</td>
+                            </tr>
+                            <tr>
+                                <td>Bloemside Phase 3</td>
+                                <td>5,249</td>
+                                <td>0.87</td>
+                            </tr>
+                            <tr>
+                                <td>Bob Rogers Park</td>
+                                <td>377</td>
+                                <td>0.38</td>
+                            </tr>
+                            <tr>
+                                <td>Brandwag</td>
+                                <td>4.075</td>
+                                <td>1.49</td>
+                            </tr>
+                            <tr>
+                                <td>Buitesig</td>
+                                <td>529</td>
+                                <td>0.19</td>
+                            </tr>
+                            <tr>
+                                <td>Dan Pienaar</td>
+                                <td>5,606</td>
+                                <td>3.57</td>
+                            </tr>
+                            <tr>
+                                <td>Deals Gift</td>
+                                <td>1,067</td>
+                                <td>6.80</td>
+                            </tr>
+                            <tr>
+                                <td>Estoire AH</td>
+                                <td>517</td>
+                                <td>6.52</td>
+                            </tr>
+                            <tr>
+                                <td>Fauna</td>
+                                <td>4,576</td>
+                                <td>1.69</td>
+                            </tr><tr>
+                                <td>Grasslands</td>
+                                <td>34,601</td>
+                                <td>5.91</td>
+                            </tr>
+                            <tr>
+                                <td>Louriepark</td>
+                                <td>3,177</td>
+                                <td>2.22</td>
+                            </tr>
+                            <tr>
+                                <td>Mandela View</td>
+                                <td>858</td>
+                                <td>3.22</td>
+                            </tr>
+                            <tr>
+                                <td>Olive Hill SH</td>
+                                <td>717</td>
+                                <td>6.03</td>
+                            </tr>
+                            <tr>
+                                <td>Pentagon Park</td>
+                                <td>2,263</td>
+                                <td>1.00</td>
+                            </tr>
+                            <tr>
+                                <td>Rayton SH</td>
+                                <td>1,268</td>
+                                <td>13.09</td>
+                            </tr>
+                            <tr>
+                                <td>Tempe</td>
+                                <td>1,393</td>
+                                <td>5.39</td>
+                            </tr>
+                            <tr>
+                                <td>Uitsig</td>
+                                <td>4,313</td>
+                                <td>1.92</td>
+                            </tr>
+                            <tr>
+                                <td>Vredenhof SH</td>
+                                <td>466</td>
+                                <td>2.49</td>
+                            </tr>
+                            <tr>
+                                <td>Willows</td>
+                                <td>6,150</td>
+                                <td>2.42</td>
+                            </tr>
+                            <tr>
+                                <td>Woodlands  Estates</td>
+                                <td>1,940</td>
+                                <td>3.06</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </aside>
+            <div class="photos">
+                <img src="images/Botanical-gardens.webp" alt="Gardens" width="400" height="400" loading="lazy">
+                <p>The beautiful Botanical Gardens, used for big events and family picnics</p>
             </div>
-            <div id="Upcoming-events">
-                <h3>Events</h3>
-                <ul>
-                    <li>Knights vs Limpopo at the Mangaung Oval, Thursday 02 November (10:00)</li>
-                    <li>GLS 2023 Bloemfontein at Doxa Deo Fichardt Park, Friday 03 November at (08:30)</li>
-                    <li>Charity Run Pentagon Pistils at Christian Brothers College, Saturday 04 November (05:00)</li>
-                    <li>Toileting and picky eating workshop at Blaize Academy, Saturday 4 November 2023 (07:30)</li>
-                    <li>Back to the Eighties with the Bloemfontein Philharmonica at Monte Bella Estate, Saturday 04 November (19:30)</li>
-                </ul>
+            <div class="photos">
+                <img src="images/Elude-Escape-Rooms.webp" alt="Escape Room" width="400" height="400" loading="lazy">
+                <p> Escape Rooms, come enjoy mistery and adventure with your family and friends!</p>
             </div>
-            <div id="attractions">
-                <h4>Attractions</h4>
-                <ul>
-                    <li>Free State National Botanical Garden</li>
-                    <li>Oliewenhuis Art Museum</li>
-                    <li>Toyota Stadium</li>
-                    <li>Navil Hill Planetarium</li>
-                    <li>Navil Hill</li>
-                    <li>Langehoven Market</li>
-                    <li>Bloemfontein Golf Club</li>
-                    <li>Elude Escape Rooms</li>
-                    <li>Famous Brew & Still</li>
-                    <li>Loch Logan Waterfront</li>
-                </ul>
+            <div class="photos">
+                <img src="images/Golf-Club.webp" alt="Golf Club" width="400" height="400" loading="lazy">
+                <p> Golf Club, local golf club for proffessionals and beginners</p>
             </div>
-        </aside>
-        <main class="main-content">
-            <div class="photo">
-                <img src="images/Botanical-gardens.webp" alt="Gardens" loading="lazy">
-                <p>The beautiful Botanical Gardens</p>
+            <div class="photos">
+                <img src="images/naval-hill.webp" alt="Hiking" width="400" height="400" loading="lazy">
+                <p> Navil Hill, a quiet hicking spot for everyone in the city</p>
             </div>
-            <div class="photo">
-                <img src="images/Elude-Escape-Rooms.webp" alt="Escape Room" loading="lazy">
-                <p>Elude Escape Rooms</p>
+            <div class="photos">
+                <img src="images/Oliewenhuis-Art-Museum.webp" alt="Art Museum" width="400" height="400" loading="lazy">
+                <p>Oliewenhuis Art Museum, a tourist attraction</p>
             </div>
-            <div class="photo">
-                <img src="images/Golf-Club.webp" alt="Golf Club" loading="lazy">
-                <p>Bloemfontein Golf Club</p>
+            <div class="photos">
+                <img src="images/Toyota-Stadium.webp" alt="Stadium" width="400" height="400" loading="lazy">
+                <p>Toyota Stadium, come enjoy a game of Rugby or soccer</p>
             </div>
-            <div class="photo">
-                <img src="images/naval-hill.webp" alt="Hiking" loading="lazy">
-                <p>Navil Hill</p>
+
+            <div id="visits">
+                <p id="message"></p>
             </div>
-            <div class ="photo">
-                <img src="images/Oliewenhuis-Art-Museum.webp" alt="Art Museum" loading="lazy">
-                <p>Oliewenhuis Art Museum</p>
-            </div>
-            <div class="photo">
-                <img src="images/Toyota-Stadium.webp" alt="Stadium" loading="lazy">
-                <p>Toyota Stadium</p>
-            </div>
-        </main>
-        <div id="visits">
-            <p id="message"></p>
         </div>
-    </div>
+    </main>
     <footer>
         <div class="compani-info">
             <div class="footer-column">
-              <img src="images/bloemfontein-logo.webp" alt="Bloemfontein Chamber of Commerce logo">
+                <img src="images/bloemfontein-logo.webp" alt="Bloemfontein Chamber of Commerce logo">
             </div>
-        <p>&copy;<span id="currentYear"></span></p>
-        <p>📞(051) 789 3412 | ✉️cityofroses@mail.co.za</p>
-        <p>Ntombizodwa Vinolia Moekwa - WDD 230 Project</p>
-        <p>Last modified: <span id="lastModified"></span></p>
+            <p>&copy;<span id="currentYear"></span></p>
+            <p>📞(051) 789 3412 | ✉️cityofroses@mail.co.za</p>
+            <p>Ntombizodwa Vinolia Moekwa - WDD 230 Project</p>
+            <p>Last modified: <span id="lastModified"></span></p>
+        </div>
     </footer>
     <script src="scripts/responsive-menu.js"></script>
     <script src="scripts/getdates.js"></script>
