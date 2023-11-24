@@ -1,63 +1,82 @@
-const currentTemp = document.querySelector('#currentTemp');
-const weatherIcon = document.querySelector('#weatherIcon');
-const captionDesc = document.querySelector('#captionDesc');
-const forecastContainer = document.getElementById('forecast-container');
+document.addEventListener('DOMContentLoaded', function () {
+  const apiKey = 'ea0ef6d4bca4ed72adb77eca9be71837';
+  const city = 'Bloemfontein';
 
-const urlCurrent = 'https://api.openweathermap.org/data/2.5/weather?lat=-29.07076&lon=26.12374&units=imperial&appid=ea0ef6d4bca4ed72adb77eca9be71837';
-const apiUrlForecast = `https://api.openweathermap.org/data/2.5/onecall?lat=-29.06319839504859&lon=26.159778705935214&exclude=current,minutely,hourly&appid=ea0ef6d4bca4ed72adb77eca9be71837`;
+  // Initial fetch and update
+  fetchWeatherData();
 
-Promise.all([
-  fetch(urlCurrent).then(response => response.json()),
-  fetch(apiUrlForecast).then(response => response.json())
-])
-  .then(([currentData, forecastData]) => {
-    // Display current temperature information
-    displayCurrent(currentData);
+  // Set interval to fetch and update weather data every 10 minutes (600,000 milliseconds)
+  const intervalId = setInterval(() => {
+      fetchWeatherData();
+  }, 600000);
 
-    // Process and display forecast information
-    displayForecast(forecastData);
-  })
-  .catch(error => {
-    console.log('Error fetching data:', error);
-  });
+  function fetchWeatherData() {
+      const timestamp = new Date().getTime(); // Add a timestamp to prevent caching
+      const apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&dt=${timestamp}`;
 
-function displayCurrent(data) {
-  currentTemp.innerHTML = `${data.main.temp}&deg;F`;
-  const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
-  let desc = data.weather[0].description;
-  weatherIcon.setAttribute('src', iconsrc);
-  weatherIcon.setAttribute('alt', desc);
-  captionDesc.textContent = `${desc}`;
-}
+      fetch(apiUrl)
+          .then(response => {
+              if (!response.ok) {
+                  throw new Error('Network response was not ok');
+              }
+              return response.json();
+          })
+          .then(data => {
+              console.log('Weather data:', data); // Log the response for debugging
+              updateWeatherCard(data);
+          })
+          .catch(error => {
+              console.error('Error fetching weather data:', error);
+          });
+  }
 
-function displayForecast(data) {
-  const forecast = data.daily.slice(1, 4);
+  function updateWeatherCard(data) {
+      // Update current weather
+      const currentTemperatureKelvin = data.list[0].main.temp;
+      const currentTemperatureCelsius = Math.round(currentTemperatureKelvin - 273.15);
+      const currentDescription = capitalizeEachWord(data.list[0].weather[0].description);
+      const currentIconCode = data.list[0].weather[0].icon;
 
-  forecast.forEach(day => {
-    const date = new Date(day.dt * 1000); // Convert UNIX timestamp to date
-    const dayOfWeek = date.toLocaleDateString('en-US', { weekday: 'long' });
-    const weatherDescription = day.weather[0].description;
-    const maxTemp = day.temp.max;
-    const minTemp = day.temp.min;
+      document.getElementById('current-temperature').textContent = currentTemperatureCelsius + ' °C';
+      document.getElementById('current-description').textContent = currentDescription;
+      document.getElementById('weather-icon').src = `https://openweathermap.org/img/w/${currentIconCode}.png`;
 
-    // Create a forecast element for each day
-    const forecastElement = document.createElement('div');
-    forecastElement.classList.add('forecast-day');
+      // Update 3-day forecast
+      const forecastList = document.getElementById('forecast-list');
+      forecastList.innerHTML = ''; // Clear previous forecast items
 
-    // Add forecast information to the forecast element
-    forecastElement.innerHTML = `
-      <h3>${dayOfWeek}</h3>
-      <p>${weatherDescription}</p>
-      <p>Max: ${maxTemp}°C</p>
-      <p>Min: ${minTemp}°C</p>
-    `;
+      const threeDayForecast = data.list.filter((forecast, index) => index % 8 === 0).slice(1, 4);
 
-    // Append the forecast element to the forecast container
-    forecastContainer.appendChild(forecastElement);
-  });
+      threeDayForecast.forEach(dayForecast => {
+          const averageTemperature = Math.round(dayForecast.main.temp - 273.15);
+          const dayName = getDayName(dayForecast.dt_txt);
+          const dayDescription = capitalizeEachWord(dayForecast.weather[0].description);
+          const dayIconCode = dayForecast.weather[0].icon;
+          const rainChance = calculateRainChance(dayForecast);
 
+          const forecastItem = document.createElement('li');
+          forecastItem.classList.add('forecast-item');
+          forecastItem.innerHTML = `
+              <p>${dayName}: ${averageTemperature} °C, ${dayDescription}, Rain: ${rainChance}%</p>
+              <img src="https://openweathermap.org/img/w/${dayIconCode}.png" alt="Forecast Icon">
+          `;
+          forecastList.appendChild(forecastItem);
+      });
+  }
 
+  function calculateRainChance(dayForecast) {
+      return dayForecast.rain ? Math.round(dayForecast.rain['3h']) : 0;
+  }
 
+  function getDayName(dateString) {
+      const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+      const date = new Date(dateString);
+      const dayName = days[date.getDay()];
+      return dayName;
+  }
 
-
-}
+  // Function to capitalize the first letter of each word in a string
+  function capitalizeEachWord(string) {
+      return string.replace(/\b\w/g, c => c.toUpperCase());
+  }
+});
