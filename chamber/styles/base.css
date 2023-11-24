@@ -577,7 +577,10 @@ main .members-container {
 
      
   /*mobile view*/
-  @media screen and (max-width:644px) {
+  @media screen and (max-width:600px) {
+    body{
+      display: block;
+    }
     .grid {
       display: grid;
       grid-template-columns: 1fr;
@@ -663,23 +666,36 @@ main .members-container {
       display:grid;
       grid-template-columns: 1fr;
      }
+
+    footer{
+    padding:15px 10px;
+    font-size: 14px;
+    text-align: center;
+    }
      
  }
 
+ 
+
  /* Tablet view */
 
-@media (min-width: 645px) and (max-width: 767px) {
+@media (min-width: 768px) and (max-width:1023 ) {
   .grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr); /* Two columns for medium screens */
       grid-gap: 2rem;
+  }
+  footer{
+    padding:20px 20px;
+    font-size: 16px;
+    text-align: center;
   }
   }
 
 
 /* Desktop view */
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   body {
       font-size: 18px;
   }
@@ -688,6 +704,8 @@ main .members-container {
       grid-template-columns: 1fr 1fr 1fr; /* Three columns for large screens */
       grid-gap: 2rem;
   }
+
+
 }
 
 
