@@ -76,26 +76,7 @@
     
     
 
-  /*#hero {
-    display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-    margin-top: 100px;
-  }
-  #hero-box {
-    grid-column: 1/4;
-    grid-row: 1/3;
-    z-index: -1;
-  }
-  #hero-img{
-    width: 100%;
-  }
-  #hero-msg {
-    grid-column: 2/3;
-    grid-row: 1/2;
-    margin-top: 500px;
-    
-  }
-  */
+  
 
   .hero {
     position: relative;
@@ -163,18 +144,16 @@
         border-color:#4e86ab ;
         }
 
-        .directory li{
+        .directory  ul li{
           padding: 5px;
+          list-style: none;
         }
 
-      
-        
 
-        
-     
+    
 
-     .weather-card{
-        background-color:var(--primary-color);
+     #discover{
+        background-color: var(--primary-color);
         padding: 5px;
         justify-content: center;
         text-align: center;
@@ -183,18 +162,15 @@
         border-style: groove;
         border-color:#4e86ab 
 
-
+      
+        
      }
 
-     #discover{
-        background-color: var(--primary-color);
-        padding: 5px;
-        text-align: center;
-        border-radius: 10px;
-        border-width: 2px;
-        border-style: groove;
-        border-color:#4e86ab 
-        
+     #disc-img{
+      float:left;
+      margin-right: 20px;
+      width:300px;
+      height:300px;
      }
 
      nav ul{
@@ -217,48 +193,7 @@
      }
 
 
-    /*discover page
-    .discover-container
-    {
-      display: grid;
-    grid-template-columns: 1fr 3fr; 
-    gap: 20px;
-    margin: 20px;
-    }
-
-    .sidebar ul li{
-      background-color: white;
-    text-align: center;
-    list-style: none;
-    padding:5px;
-    text-decoration: none;
-    }
-
-    .main-content {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-      gap: 0px;
-
-  }
-
-  .main-content :hover img{
-    transform: scale(1.1);
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .photo img {
-      width: 100%;
-      height: 80%;
-      padding: 20px;
     
-  }
-  
-  .photo p {
-      font-size: 15px;
-      margin-top: -20px;
-      background-color: white;
-  } 
-*/
   .discover-container {
   display: grid;
   grid-template-columns: 1fr 3fr; 
@@ -551,20 +486,6 @@ main .members-container {
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
      footer{
         text-align: center;
         background-color: #73a1a3;
@@ -577,12 +498,6 @@ main .members-container {
         align-items: center;
     }
      
-     
-    
-  
-  
-  
-
      
   /*mobile view*/
   @media screen and (max-width:600px) {
@@ -682,17 +597,21 @@ main .members-container {
     }
      
  }
-
- /*weather styles*/
-#weather-section {
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 15px;
+ /*weather and forecast styles*/
+ #weather-section
+ {
+  display:block;
+  background-color:var(--primary-color);
+  padding: 5px;
   text-align: center;
-  max-width: 500px;
-  width: 100%;
-}
+  border-radius: 10px;
+  border-width: 2px;
+  border-style: groove;
+  border-color:#4e86ab ;
+  flex-wrap: wrap;
+
+  
+ }
 
 #weather-icon {
   max-width: 50px;
@@ -706,9 +625,9 @@ main .members-container {
 }
 
 #current-description {
-  color: #555;
+  color: #333;
   margin-bottom: 15px;
-  font-size: 14px;
+  
 }
 
 #forecast-list {
@@ -721,12 +640,11 @@ main .members-container {
 
 .forecast-item {
   text-align: center;
-  font-size: 14px;
   margin: 5px;
 }
 
 .forecast-item img {
-  max-width: 30px;
+  max-width: 50px;
   margin-top: 5px;
 }
 
