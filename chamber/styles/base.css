@@ -13,6 +13,9 @@
 }
 
 
+.grid{
+  display:grid;
+}
 #icon{
   width:30px;
   cursor:pointer;
@@ -475,34 +478,127 @@ main .members-container {
 }
 
 
-@media (min-width: 768px) {
-  .member-card, .member-list-item {
-    width: 30%;
-  }
-}
-
-@media (max-width: 767px) {
-  .member-card,
-  .member-list-item {
-    width: 100%; /* this display vertically on small screens */
-  }
-}
-
-     footer{
+footer{
         text-align: center;
         background-color: #73a1a3;
      }
      
-     .compani-info {
+.compani-info {
       display: flex;
         justify-content: space-between;
         padding: 20px;
         align-items: center;
     }
      
-     
-  /*mobile view*/
-  @media screen and (max-width:767px) {
+
+ /*weather and forecast styles*/
+ #weather-section
+ {
+  display:block;
+  background-color:var(--primary-color);
+  padding: 5px;
+  text-align: center;
+  border-radius: 10px;
+  border-width: 2px;
+  border-style: groove;
+  border-color:#4e86ab ;
+  flex-wrap: wrap;
+
+  
+ }
+
+#weather-icon {
+  max-width: 50px;
+  margin-bottom: 10px;
+}
+
+#current-temperature {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+#current-description {
+  color: #333;
+  margin-bottom: 15px;
+  
+}
+
+#forecast-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.forecast-item {
+  text-align: center;
+  margin: 5px;
+}
+
+.forecast-item img {
+  max-width: 50px;
+  margin-top: 5px;
+}
+
+
+/*----Spotlight---*/
+
+#spotlight {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  box-sizing: border-box;
+  border-width: 2px;
+  border-style: groove;
+  border-color:#4e86ab;
+  border-radius: 10px;
+  padding: 5px;
+
+}
+
+#spotlight img {
+  width: 300px;
+  height: 300px;
+  height: auto;
+  margin: 10px;
+  display: block;
+}
+
+
+#history{
+  display:block;
+  background-color:var(--primary-color);
+  padding: 5px;
+  text-align: center;
+  border-radius: 10px;
+  border-width: 2px;
+  border-style: groove;
+  border-color:#4e86ab;
+
+
+}
+
+#mandela{
+  display:block;
+  background-color:var(--primary-color);
+  padding: 5px;
+  text-align: center;
+  border-radius: 10px;
+  border-width: 2px;
+  border-style: groove;
+  border-color:#4e86ab;
+
+}
+
+#mandela-image{
+  width: 250px;
+  height:250px ;
+}
+
+/*mobile view*/
+  @media screen and (min-width:600px) {
     body{
       display: block;
     }
@@ -586,6 +682,14 @@ main .members-container {
   transform: none;
 }
 
+  .member-card,
+  .member-list-item {
+    width: 100%; 
+  }
+}
+
+  
+
 /*----forms---*/
      .form-container{
       display:grid;
@@ -598,144 +702,10 @@ main .members-container {
     text-align: center;
     }
      
- }
- /*weather and forecast styles*/
- #weather-section
- {
-  display:block;
-  background-color:var(--primary-color);
-  padding: 5px;
-  text-align: center;
-  border-radius: 10px;
-  border-width: 2px;
-  border-style: groove;
-  border-color:#4e86ab ;
-  flex-wrap: wrap;
+ 
 
-  
- }
-
-#weather-icon {
-  max-width: 50px;
-  margin-bottom: 10px;
-}
-
-#current-temperature {
-  font-size: 18px;
-  font-weight: bold;
-  color: #333;
-}
-
-#current-description {
-  color: #333;
-  margin-bottom: 15px;
-  
-}
-
-#forecast-list {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-.forecast-item {
-  text-align: center;
-  margin: 5px;
-}
-
-.forecast-item img {
-  max-width: 50px;
-  margin-top: 5px;
-}
+ 
 
 
-/*----Spotlight---*/
-/* Assuming 'spotlight' is the ID of the container */
-/* For mobile and tablet view */
-#spotlight {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  box-sizing: border-box;
-  border-width: 2px;
-  border-style: groove;
-  border-color:#4e86ab;
-  border-radius: 10px;
-  padding: 5px;
-
-}
-
-#spotlight img {
-  width: 300px;
-  height: 300px;
-  height: auto;
-  margin: 10px;
-  display: block;
-}
-
-
-#history{
-  display:block;
-  background-color:var(--primary-color);
-  padding: 5px;
-  text-align: center;
-  border-radius: 10px;
-  border-width: 2px;
-  border-style: groove;
-  border-color:#4e86ab;
-
-
-}
-
-#mandela{
-  display:block;
-  background-color:var(--primary-color);
-  padding: 5px;
-  text-align: center;
-  border-radius: 10px;
-  border-width: 2px;
-  border-style: groove;
-  border-color:#4e86ab;
-
-}
-#mandela-image{
-  width:600px;
-  height:600px;
-
-}
-
-
- /* Tablet view */
-
-@media (min-width: 768px) and (max-width:1023px ) {
-  .grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr); /* Two columns for medium screens */
-      grid-gap: 2rem;
-  }
-  footer{
-    padding:20px 20px;
-    font-size: 16px;
-    text-align: center;
-  }
-  }
-
-
-/* Desktop view */
-
-@media (min-width: 1024px) {
-  body {
-      font-size: 18px;
-  }
-  .grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr; /* Three columns for large screens */
-      grid-gap: 2rem;
-  }
-
-
-}
 
 

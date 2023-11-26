@@ -1,5 +1,19 @@
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 768px){
     .container {
       padding: 40px;
     }
+    
+    .grid {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr); /* Two columns for medium screens */
+          grid-gap: 2rem;
+      }
+      footer{
+        padding:20px 20px;
+        font-size: 16px;
+        text-align: center;
+      }
+      
+    
+    
 }
