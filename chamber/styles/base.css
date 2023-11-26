@@ -300,7 +300,7 @@
 
 #statistics a:hover{
   background-color: white;
-  padding: 0,5;
+  padding: 5px;
 }
 @media (max-width:600px ) {
   .discover-container {
@@ -309,7 +309,7 @@
   }
 
   .sidebar {
-    grid-column: 100%;
+    grid-column: 1/2;
     background-color: white;
     color: var(--primary-color);
     padding: 10px;
@@ -318,7 +318,7 @@
   }
 
   .photos{
-    grid-column: 100%;
+    grid-column: 2/4;
   }
 }
 
@@ -502,7 +502,7 @@ main .members-container {
      
      
   /*mobile view*/
-  @media screen and (max-width:600px) {
+  @media screen and (max-width:767px) {
     body{
       display: block;
     }
@@ -709,7 +709,7 @@ main .members-container {
 
  /* Tablet view */
 
-@media (min-width: 768px) and (max-width:1023 ) {
+@media (min-width: 768px) and (max-width:1023px ) {
   .grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr); /* Two columns for medium screens */
