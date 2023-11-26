@@ -11,6 +11,16 @@
      grid-gap: 2rem;
  }
 
+ .form-container{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+   }
+ 
+   .photos img:hover {
+    opacity: 0.8; 
+    transition: transform 0.3s ease; 
+    animation:fade 20s;
+   }
 
 }
 

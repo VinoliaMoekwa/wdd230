@@ -20,18 +20,36 @@
 </head>
 <body>
     <header>
-        <img src="images/darkmode.png" alt="darkmode" id="icon">
-        <nav>
-            <a id="menu" href="#"></a>
-            <ul class="navigation">
-                <li><a href="https://vinoliamoekwa.github.io/wdd230/chamber/index.html">Home</a></li>
-                <li><a href="https://vinoliamoekwa.github.io/wdd230/chamber/discover.html">Discover</a></li>
-                <li><a href="#">Join</a></li>
-                <li><a href="#">Directory</a></li>
-            </ul>
-        </nav>
-    </header>
+        <div class="heading">
+            <img src="images/bloemfontein-logo.webp" alt="Bloemfontein Chamber of Commerce logo">
+            <h1 class="home-title">Bloemfontein Chamber of Commerse</h1>
+            <img src="images/darkmode.png" alt="darkmode" id="icon">
+            </div>
+            <nav>
+                <a id="menu" href="#"></a>
+                <ul class="navigation">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="directory.html">Directory</a></li>
     
+                </ul>
+        </nav>
+    <div class="hero">
+        
+        <picture>
+            <source srcset="images/hero-small.webp" media="(max-width:500px)">
+            <source srcset="images/hero-medium.webp" media="(max-width:1000px)">
+            <img src="images/hero-large.webp" alt="Hero Image">
+        </picture>
+        <div id="hero-msg">
+            
+            <div class="button">
+                <a href="join.html" target="_blank" title="join" class="btn">Join The Chamber</a>
+              </div>   
+        </div>
+    </div>
+</header>
         <main>
             <div class="thank-you">
             <p>Thank you for successfully submitting the form!!!</p>
