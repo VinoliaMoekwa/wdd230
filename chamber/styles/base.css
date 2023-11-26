@@ -649,6 +649,62 @@ main .members-container {
 }
 
 
+/*----Spotlight---*/
+/* Assuming 'spotlight' is the ID of the container */
+/* For mobile and tablet view */
+#spotlight {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  box-sizing: border-box;
+  border-width: 2px;
+  border-style: groove;
+  border-color:#4e86ab;
+  border-radius: 10px;
+  padding: 5px;
+
+}
+
+#spotlight img {
+  width: 300px;
+  height: 300px;
+  height: auto;
+  margin: 10px;
+  display: block;
+}
+
+
+#history{
+  display:block;
+  background-color:var(--primary-color);
+  padding: 5px;
+  text-align: center;
+  border-radius: 10px;
+  border-width: 2px;
+  border-style: groove;
+  border-color:#4e86ab;
+
+
+}
+
+#mandela{
+  display:block;
+  background-color:var(--primary-color);
+  padding: 5px;
+  text-align: center;
+  border-radius: 10px;
+  border-width: 2px;
+  border-style: groove;
+  border-color:#4e86ab;
+
+}
+#mandela-image{
+  width:600px;
+  height:600px;
+
+}
+
+
  /* Tablet view */
 
 @media (min-width: 768px) and (max-width:1023 ) {
