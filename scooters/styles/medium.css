@@ -1,0 +1,117 @@
+
+
+    
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+h2{
+
+    text-align: center;
+    font: 1rem;
+}
+
+main {
+    align-self: auto;
+}
+.menu{
+    display: flex;
+    list-style: none;
+    padding: 0; 
+    background-color: #D62828;
+    font-size: 1.5rem;
+     
+}
+
+.menu li{
+    margin-right: 20px;
+    
+    
+    
+}
+
+.menu li a{
+    text-decoration: none;
+    color: white;
+}
+
+.menu li:last-child{
+    margin-right: 0;
+}
+
+button{
+    transform: translate(-100%);
+}
+
+table img{
+    width:100%;
+    height: auto;
+}
+.hero img{
+    width: 100%;
+    height: auto;
+}
+
+.pics{
+    gap: 5px;
+}
+.photos{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+
+
+
+}
+
+
+.photos p{
+    text-align: center;
+}
+
+#rental-form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 900px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+#contact-form{
+    display:grid;
+    grid-template-columns: 1fr;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button{
+    position:absolute;
+    top:20%;
+    right: 20px;
+    transform: translate(-120%);
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #f77f00;
+    color: white;
+    border: none;
+    border-radius:  5px;
+    cursor: pointer;
+    
+}
+
+
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Ntombizodwa Vinolia Moekwa">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact page of Scoots Motor Rental Company </title>
+    <meta name="description"
+        content="WDD 230-Web Fronted Development, Ntombizodwa Vinolia Moekwa, Final Website Project">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="images/scootsicon.png">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;1,300&family=Roboto&family=Roboto+Flex&display=swap"
+        rel="stylesheet">
+    <meta property="og:title" content="Ntombizodwa Vinolia Moekwa- WDD 230-Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://www.tripsavvy.com/thmb/k_TTp6poZNXY-wxzynbmS0bpzbM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-104739552-fe84c098b6aa4732af469141ceee107e.jpg">
+    <meta property="og: url" content="https://vinoliamoekwa.github.io/wdd230/chamber/index.html">
+</head>
+
+<body>
+    <header>
+        <div class="heading">
+            <h1>~Scoots~</h1>
+            <img class="logo" src="images/scootsicon.png" alt="Scoots logo icon">
+            <button>Rent A Scooter</button>
+        </div>
+        <a id="responsive-menu" href="#"></a>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rentals.html">Rentals</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <picture>
+                <source srcset="images/scoots-hero-small.webp" media="(max-width:500px)">
+                <source srcset="images/scoots-hero-medium.webp" media="(max-width:1000px)">
+                <img src="images/scoots-hero-large.webp" alt="Hero Image">
+            </picture>
+        </div>
+    </header>
+    <main>
+        <h2>Leave Us A Message</h2>
+        <form action="process-form.html" method="get">
+            <div id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            
+            <label for="comment">Comment:</label><br>
+            <textarea id="comment" name="comment" rows="4" cols="50" required></textarea><br><br>
+            
+            <input type="submit" value="Submit">
+        </div>
+        </form>
+    <div id="maps">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3739.5527009811917!2d-87.02246491783956!3d20.401324560308257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e517e07293401%3A0x8b836b5c60c599de!2sParadise%20Beach%20Cozumel!5e0!3m2!1sen!2sza!4v1702453494555!5m2!1sen!2sza" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3741.538432830721!2d-87.36268331785278!3d20.319363663202658!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e32c93fffffc1%3A0xfe3263656477196!2sXel-H%C3%A1%20Park!5e0!3m2!1sen!2sza!4v1702454739562!5m2!1sen!2sza" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    </main>
+    <footer>
+
+        <div class="social-media-links">
+            <a href="https://www.facebook.com/scoots" target="_blank" rel="facebook link">
+                <img src="images/facebook-icon.png" class="social-icons" alt="Facebook">
+            </a>
+            <a href="https://www.twitter.com/scoots" target="_blank" rel="twitter link">
+                <img src="images/twitter-icon.png" class="social-icons" alt="Twitter">
+            </a>
+            <a href="https://www.instagram.com/scoots" target="_blank" rel="instagram link">
+                <img src="images/instagram-icon.jpeg" class="social-icons" alt="Instagram">
+            </a>
+        </div>
+        <p>📞(987) 345 678 | ✉️ scootsrentals@gmail.com</p>
+        <p>&copy; 2023 scootsretals.com. All rights reserved.</p>
+        <div>
+            <p>Scooter favicon by <a href="https://www.pngwing.com/en/search?q=scooter">PNGWing</a></p>
+            <p>Hero image by <a href="https://www.pexels.com/photo/photo-of-black-motorcycle-949588/">Pexels (Rovenimages.com)</a></p>
+            <p>Picture 1 by <a href="https://www.pexels.com/search/cozumel%20mexico/">Pexels (Manti Mango)</a></p>
+            <p>Picture 2 by <a href="https://www.pexels.com/search/cozumel%20mexico/">Pexels (Rual Juarez)</a></p>
+            <p>
+              <a href="https://www.pexels.com/photo/side-view-photo-of-motorcycle-1629180/">Honda Metro Scooter</a> by
+              <a href="https://www.pexels.com/@minan">Min An (Pexels)</a>
+            </p>
+            <p>
+              <a href="https://www.pexels.com/photo/front-view-of-a-honda-scooter-13381987/">Honda Dio Scooter</a> by
+              <a href="https://www.pexels.com/@kerem-canarslan-291666">Kerem Canarslan (Pexels)</a>
+            </p>
+            <p>
+              <a href="https://powersports.honda.com/motorcycle/scooter/pcx?year=2022">Honda PCX 150</a> by Honda Power Sports
+            </p>
+            <p>
+              <a href="https://powersports.honda.com/motorcycle/scooter/pcx?year=2022">Honda Pioneer ATV</a> by Honda Power Sports
+            </p>
+            <p>
+              <a href="https://www.pexels.com/photo/black-jeep-wrangler-parked-near-a-building-13696704/">Jeep Wrangler 4-Door</a> by
+              <a href="https://www.pexels.com/@esmihel-muhammad-441727">Esmihel Muhammad (Pexels)</a>
+            </p>
+            <p>
+              <a href="https://www.pexels.com/photo/a-black-jeep-wrangler-on-a-rocky-dirt-road-10190771/">Jeep Wrangler 2-Door</a> by
+              <a href="https://www.pexels.com/@mike-anast-392847">Mike Anast (Pexels)</a>
+            </p>
+          </div>
+    </footer>
+    <script src="scripts/responsive-menu.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="script/message.js"></script>
+    <script src="script/rentals.js"></script>
+
+</body>
+
+</html>
